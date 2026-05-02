@@ -1,0 +1,25 @@
+{
+  "routines": [
+    {
+      "name": "Morning Research",
+      "schedule": "45 9 * * 1-5",
+      "timezone": "America/New_York",
+      "prompt": "Run the morning research routine. Check market status first. If the market is open, pull bars and news for every symbol in watchlist.json. Summarize findings in a structured format and save to journal/YYYY-MM-DD.md under the Research section.",
+      "allowed_tools": ["bash", "read", "write"]
+    },
+    {
+      "name": "Trading Session",
+      "schedule": "0 10 * * 1-5",
+      "timezone": "America/New_York",
+      "prompt": "Run the trading session. Read today's research from the journal file. Check current positions and cash balance. For each symbol in the watchlist, decide whether to buy, sell, or hold based on the research and your trading rules in CLAUDE.md. Place limit orders for any decisions. Log all actions and reasoning to the journal.",
+      "allowed_tools": ["bash", "read", "write"]
+    },
+    {
+      "name": "End of Day Journal",
+      "schedule": "15 16 * * 1-5",
+      "timezone": "America/New_York",
+      "prompt": "Run the end-of-day routine. Pull final positions and account value. Read all orders placed today. Complete the journal entry for today with a reflection section. Note what worked, what didn't, and what to watch tomorrow.",
+      "allowed_tools": ["bash", "read", "write"]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "watchlist": [
+    {
+      "symbol": "LITE",
+      "description": "Lumentum — EML lasers / CPO; $2B NVIDIA partnership, sold out through 2027",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "AAOI",
+      "description": "Applied Optoelectronics — vertically integrated 800G/1.6T transceivers",
+      "max_allocation_pct": 3
+    },
+    {
+      "symbol": "LWLG",
+      "description": "Lightwave Logic — pre-revenue EO polymer modulators; speculative",
+      "max_allocation_pct": 1
+    },
+    {
+      "symbol": "COHR",
+      "description": "Coherent Corp — transceivers/lasers; 25% market share; best risk/reward of pure plays",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "POET",
+      "description": "POET Technologies — optical interposer platform; speculative",
+      "max_allocation_pct": 1
+    },
+    {
+      "symbol": "FN",
+      "description": "Fabrinet — contract manufacturer for COHR/LITE; picks-and-shovels play",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "CIEN",
+      "description": "Ciena — coherent optical / DCI systems leader",
+      "max_allocation_pct": 4
+    },
+    {
+      "symbol": "AVGO",
+      "description": "Broadcom — CPO and switch ASIC platform leader",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "MRVL",
+      "description": "Marvell Technology — DSPs inside optical modules; $2B NVIDIA partnership",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "NVDA",
+      "description": "NVIDIA — demand engine driving the entire photonics buildout",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "CSCO",
+      "description": "Cisco Systems — 102.4 Tbps switch silicon; coherent optical via Acacia",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "CRDO",
+      "description": "Credo Technology — SerDes / AEC / DSP; revenue +201% YoY Q3 FY26",
+      "max_allocation_pct": 3
+    },
+    {
+      "symbol": "MTSI",
+      "description": "MACOM Technology — laser drivers / TIAs; LPO mid-market play",
+      "max_allocation_pct": 3
+    },
+    {
+      "symbol": "ALAB",
+      "description": "Astera Labs — CXL/PCIe/optical connectivity; building photonics division",
+      "max_allocation_pct": 3
+    },
+    {
+      "symbol": "TSEM",
+      "description": "Tower Semiconductor — SiPh foundry; tripling SiPh shipments by mid-2026",
+      "max_allocation_pct": 4
+    },
+    {
+      "symbol": "TSM",
+      "description": "TSMC — leading-edge foundry building NVIDIA Quantum-X / Spectrum-X CPO switches",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "GFS",
+      "description": "GlobalFoundries — GF Fotonix SiPh platform; China-free supply chain",
+      "max_allocation_pct": 4
+    },
+    {
+      "symbol": "ANET",
+      "description": "Arista Networks — leading data center switching vendor; CPO transition beneficiary",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "VIAV",
+      "description": "Viavi Solutions — optical test & certification; 'hidden alpha' adjacency",
+      "max_allocation_pct": 4
+    },
+    {
+      "symbol": "FORM",
+      "description": "FormFactor — wafer probe cards for TSEM and GFS SiPh foundries",
+      "max_allocation_pct": 4
+    },
+    {
+      "symbol": "KEYS",
+      "description": "Keysight Technologies — reference-standard optical test instruments",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "VECO",
+      "description": "Veeco Instruments — MOCVD reactor duopolist; InP capacity buildout beneficiary",
+      "max_allocation_pct": 4
+    },
+    {
+      "symbol": "GLW",
+      "description": "Corning — specialty optical fiber monopoly; $6B Meta contract",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "CLFD",
+      "description": "Clearfield — fiber connectivity hardware; below 2022 highs despite AI demand",
+      "max_allocation_pct": 2
+    },
+    {
+      "symbol": "AXTI",
+      "description": "AXT Inc — InP wafer substrate chokepoint; speculative post +5,400% run",
+      "max_allocation_pct": 1
+    },
+    {
+      "symbol": "LASR",
+      "description": "nLight — defense / industrial lasers; $162M defense backlog",
+      "max_allocation_pct": 3
+    },
+    {
+      "symbol": "IPGP",
+      "description": "IPG Photonics — industrial fiber lasers; classic 'picks and shovels' value setup",
+      "max_allocation_pct": 5
+    }
+  ],
+  "cash_reserve_pct": 20
+}
