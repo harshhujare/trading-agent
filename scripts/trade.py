@@ -82,10 +82,14 @@ def place_order(symbol, qty, side, limit_price=None, **agent_meta):
     """
     headers = {**AUTH_HEADERS, "Content-Type": "application/json"}
 
-    # Pre-flight validation for buys (sells reduce exposure, no need to gate)
+    # CLAUDE.md hard rule: never place a market order. Enforced for BOTH sides
+    # (a missing limit_price on a sell silently became a market order on
+    # 2026-05-05 — see journal/lessons.md). Sells skip the allocation
+    # validation since they reduce exposure, but they still need a limit.
+    if limit_price is None:
+        return {"error": "validation_failed", "reason": "limit_price required for all orders (CLAUDE.md: no market orders, buy or sell)"}
+
     if side == "buy":
-        if limit_price is None:
-            return {"error": "validation_failed", "reason": "limit_price required (CLAUDE.md: no market orders)"}
         ok, reason = validate_order(
             symbol,
             float(qty),
@@ -101,12 +105,10 @@ def place_order(symbol, qty, side, limit_price=None, **agent_meta):
         "symbol": symbol,
         "qty": qty,
         "side": side,  # "buy" or "sell"
-        "type": "limit" if limit_price else "market",
+        "type": "limit",
         "time_in_force": "day",
+        "limit_price": str(limit_price),
     }
-
-    if limit_price:
-        order_data["limit_price"] = str(limit_price)
 
     url = f"{BASE_URL}/v2/orders"
     response = requests.post(url, headers=headers, json=order_data, timeout=HTTP_TIMEOUT)

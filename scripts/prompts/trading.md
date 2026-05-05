@@ -21,6 +21,7 @@ STEPS
      `python3 scripts/trade.py order TSM 12 buy 403.14 thesis_type=momentum_technical signal_source=bullish_ma_analyst_upgrade conviction=high rationale=ai_capex_demand_uptrend`
    - Skip any position that would exceed the symbol's max_allocation_pct in watchlist.json.
 5. ALSO consider current open positions (from step 3) for SELL signals — even if a current holding isn't in today's top5.json. Specifically: any position down 8% from entry MUST be closed (CLAUDE.md hard rule), and any position whose morning thesis has broken should be reviewed. SELLs of existing positions are always allowed regardless of top5.json.
+   - **SELLs need a limit price too.** The "no market orders" rule is absolute and applies to BOTH sides. Fetch a recent quote and use a limit within 0.2% of current bid (so the sell actually clears). `trade.py` will refuse any order with no limit_price. Do NOT call `trade.py order SYMBOL QTY sell` with no price — that's how 2026-05-05's LWLG market-order violation happened.
 6. Append trades to today's journal under ## Trades Executed (table with the same columns as the CLAUDE.md template) and ## Positions Closed. Include brief reasoning.
 
 Hard rules from CLAUDE.md: no market orders, ≤5% per position (or symbol's max_allocation_pct, whichever is lower), close any position down 8% from entry. validate_order() in trade.py enforces some of this; thesis_type/signal_source/conviction/rationale fields are how you give the future scorecard real signal to learn from — fill them honestly.

@@ -11,3 +11,4 @@ Format:
 
 - 2026-05-04: Trading routine bought 2 of 4 tickers that were NOT in morning's TOP 5 (TSM, LWLG instead of FN, COHR, CRDO). Haiku's trading agent re-scanned rather than honoring morning's research. Action: tighten trading prompt to forbid re-picking, or move trading to Sonnet.
 - 2026-05-04: Limit-price strategy of 0.2% above ask consistently overshot — actual fills came in 0.4-4% below limit (LITE saved $39/share). Aggressive limits are fine; we leave money on the table being too conservative.
+- 2026-05-05: SELLs need a limit price just like BUYs. Closed LWLG at -7.47% as a "stop-loss" but submitted with no limit, which silently became a market order — direct CLAUDE.md violation. The "no market orders" rule applies to both sides. Also: -7.47% is not yet the 8% mandatory-close threshold; discretionary closes are allowed but must still follow the limit-order rule. trade.py now refuses orders without limit_price.
