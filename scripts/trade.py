@@ -17,6 +17,10 @@ AUTH_HEADERS = {
     "APCA-API-SECRET-KEY": ALPACA_SECRET,
 }
 
+# (connect, read) seconds — bounded so a DNS hiccup or hung TLS handshake
+# can't strand a launchd-spawned routine for hours waiting on Alpaca.
+HTTP_TIMEOUT = (5, 15)
+
 TRADES_LOG = Path(__file__).resolve().parent.parent / "journal" / "trades.jsonl"
 
 
@@ -48,11 +52,11 @@ def _log_trade_event(symbol, qty, side, price, order_response, agent_meta):
         f.write(json.dumps(event) + "\n")
 
 def _account_value():
-    r = requests.get(f"{BASE_URL}/v2/account", headers=AUTH_HEADERS)
+    r = requests.get(f"{BASE_URL}/v2/account", headers=AUTH_HEADERS, timeout=HTTP_TIMEOUT)
     return float(r.json()["portfolio_value"])
 
 def _open_positions():
-    r = requests.get(f"{BASE_URL}/v2/positions", headers=AUTH_HEADERS)
+    r = requests.get(f"{BASE_URL}/v2/positions", headers=AUTH_HEADERS, timeout=HTTP_TIMEOUT)
     return [{"market_value": float(p["market_value"])} for p in r.json()]
 
 def validate_order(symbol, qty, side, current_price, account_value, current_positions):
@@ -105,7 +109,7 @@ def place_order(symbol, qty, side, limit_price=None, **agent_meta):
         order_data["limit_price"] = str(limit_price)
 
     url = f"{BASE_URL}/v2/orders"
-    response = requests.post(url, headers=headers, json=order_data)
+    response = requests.post(url, headers=headers, json=order_data, timeout=HTTP_TIMEOUT)
     result = response.json()
     _log_trade_event(symbol, qty, side, limit_price, result, agent_meta)
     return result
@@ -117,7 +121,7 @@ def cancel_all_orders():
         "APCA-API-SECRET-KEY": ALPACA_SECRET,
     }
     url = f"{BASE_URL}/v2/orders"
-    response = requests.delete(url, headers=headers)
+    response = requests.delete(url, headers=headers, timeout=HTTP_TIMEOUT)
     return response.status_code
 
 def get_market_status():
@@ -127,7 +131,7 @@ def get_market_status():
         "APCA-API-SECRET-KEY": ALPACA_SECRET,
     }
     url = f"{BASE_URL}/v2/clock"
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=HTTP_TIMEOUT)
     return response.json()
 
 if __name__ == "__main__":

@@ -10,6 +10,9 @@ ALPACA_KEY = os.getenv("APCA_API_KEY_ID")
 ALPACA_SECRET = os.getenv("APCA_API_SECRET_KEY")
 BASE_URL = os.getenv("APCA_BASE_URL")
 
+# (connect, read) seconds — same bound used in trade.py.
+HTTP_TIMEOUT = (5, 15)
+
 def get_bars(symbol, timeframe="1Day", limit=60):
     """Fetch historical price bars for a symbol.
 
@@ -29,7 +32,7 @@ def get_bars(symbol, timeframe="1Day", limit=60):
         "adjustment": "raw",
         "feed": "iex",
     }
-    response = requests.get(url, headers=headers, params=params)
+    response = requests.get(url, headers=headers, params=params, timeout=HTTP_TIMEOUT)
     return response.json()
 
 def get_account():
@@ -39,7 +42,7 @@ def get_account():
         "APCA-API-SECRET-KEY": ALPACA_SECRET,
     }
     url = f"{BASE_URL}/v2/account"
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=HTTP_TIMEOUT)
     return response.json()
 
 def get_positions():
@@ -49,7 +52,7 @@ def get_positions():
         "APCA-API-SECRET-KEY": ALPACA_SECRET,
     }
     url = f"{BASE_URL}/v2/positions"
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=HTTP_TIMEOUT)
     return response.json()
 
 def get_news(symbol):
@@ -64,7 +67,7 @@ def get_news(symbol):
         "limit": 5,
         "sort": "desc"
     }
-    response = requests.get(url, headers=headers, params=params)
+    response = requests.get(url, headers=headers, params=params, timeout=HTTP_TIMEOUT)
     return response.json()
 
 def scan_watchlist():
