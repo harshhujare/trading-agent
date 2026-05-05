@@ -20,5 +20,15 @@ STEPS
    - ## Portfolio Status (cash, positions, total value)
    - ## Market Research — for each TOP 5: 2-3 short bullets (MA read, news, BUY/HOLD/SELL lean, conviction low|medium|high). Reference any relevant lessons. For the other 22: ONE combined line "Other watchlist (no action signal): TICK1, TICK2, ..."
    Leave Trades Executed, Positions Closed, End-of-Day Reflection sections present but empty for the later routines to fill in.
+7. **Write journal/top5/__ET_DATE__.json** — this is the structured handoff to the trading routine. The 5 symbols here are the ONLY tickers trading is allowed to act on, so keep them consistent with what you wrote in the markdown's TOP 5 section. Schema:
+   ```json
+   {
+     "trading_day": "__ET_DATE__",
+     "picks": [
+       {"symbol": "...", "thesis": "<one short sentence>", "conviction": "low|medium|high", "thesis_type": "news_catalyst|ma_crossover|news+ma|earnings|other", "signal_source": "<who/what specifically — e.g. 'Rothschild upgrade'>"}
+     ]
+   }
+   ```
+   Exactly 5 entries.
 
-Be concise — bullets, not paragraphs. Only the TOP 5 get the deep treatment. Total tool calls expected: ~5 (status, scan, account, positions, write).
+Be concise — bullets, not paragraphs. Only the TOP 5 get the deep treatment. Total tool calls expected: ~6 (status, scan, account, positions, write journal, write top5.json).

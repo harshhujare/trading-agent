@@ -6,23 +6,24 @@ CONTEXT (read these first)
 - watchlist.json  → per-symbol max_allocation_pct
 - journal/SUMMARY.md  → recent positions + trade rationale + reflections
 - journal/lessons.md  → durable lessons
-- journal/__ET_DATE__.md  → morning research, including the TOP 5 + per-ticker conviction
+- **journal/top5/__ET_DATE__.json**  → AUTHORITATIVE top 5 picks from morning. This is your literal universe today.
 
 STEPS
-1. Read all five context files above. **Find today's journal's "TOP 5 Candidates" section. Write down the exact 5 ticker symbols. These are the ONLY tickers you may act on.** Morning has already done the research; your job is execution, not re-scanning. If you feel the urge to consider a ticker that's not in the morning's top 5, the answer is no.
+1. Read the context files above. Then load `journal/top5/__ET_DATE__.json`. The 5 symbols in `picks[].symbol` are the ONLY tickers you are permitted to submit orders for today. Do NOT scan the watchlist. Do NOT consider any other symbol. If `top5/__ET_DATE__.json` is missing, append "trading session skipped: morning top5.json missing" to today's journal and stop.
 2. Run: python3 scripts/trade.py status. If is_open=false, append "trading session skipped: market closed" to today's journal and stop.
 3. python3 scripts/research.py account; python3 scripts/research.py positions.
-4. For each of the morning's TOP 5 (and ONLY those 5): apply the CLAUDE.md decision framework AND the lessons from journal/lessons.md. Decide BUY / SELL / HOLD. If a pick's morning data isn't compelling enough to act on, mark it HOLD — do NOT substitute a different ticker.
+4. For each pick in `top5.json` (and ONLY those 5): use the morning's `thesis`, `conviction`, `thesis_type`, and `signal_source` as your starting point. Apply the CLAUDE.md decision framework AND any relevant lessons. Decide BUY / SELL / HOLD. If a pick's morning data isn't compelling enough to act on right now, mark it HOLD — do NOT substitute a different ticker.
    - For BUY/SELL, fetch a recent quote and use a limit price within 0.2% of current ask.
-   - Submit with structured metadata so trades.jsonl gets a real audit trail:
+   - Pass through the morning's metadata (extend or refine the rationale based on now-data):
      ```
      python3 scripts/trade.py order SYMBOL QTY {buy|sell} LIMIT_PRICE \
-       thesis_type=news_catalyst|ma_crossover|news+ma|stop_loss|target_hit|thesis_broken \
-       signal_source="<short — what specifically triggered this>" \
-       conviction=low|medium|high \
+       thesis_type=<from top5.json> \
+       signal_source="<from top5.json>" \
+       conviction=<from top5.json or refined> \
        rationale="<one short sentence: why now>"
      ```
    - Skip any position that would exceed the symbol's max_allocation_pct in watchlist.json.
-5. Append trades to today's journal under ## Trades Executed (table with the same columns as the CLAUDE.md template) and ## Positions Closed. Include brief reasoning.
+5. ALSO consider current open positions (from step 3) for SELL signals — even if a current holding isn't in today's top5.json. Specifically: any position down 8% from entry MUST be closed (CLAUDE.md hard rule), and any position whose morning thesis has broken should be reviewed. SELLs of existing positions are always allowed regardless of top5.json.
+6. Append trades to today's journal under ## Trades Executed (table with the same columns as the CLAUDE.md template) and ## Positions Closed. Include brief reasoning.
 
 Hard rules from CLAUDE.md: no market orders, ≤5% per position (or symbol's max_allocation_pct, whichever is lower), close any position down 8% from entry. validate_order() in trade.py enforces some of this; thesis_type/signal_source/conviction/rationale fields are how you give the future scorecard real signal to learn from — fill them honestly.

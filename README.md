@@ -53,7 +53,8 @@ trading-agent/
 │  ├─ YYYY-MM-DD.md      # daily narrative (portfolio, research, trades, reflection)
 │  ├─ SUMMARY.md         # rolled-up: latest portfolio + last 7d trades + last 3d reflections
 │  ├─ trades.jsonl       # structured trade audit log (one JSON line per order event)
-│  └─ lessons.md         # curated, append-only durable lessons (EOD writes, morning reads)
+│  ├─ lessons.md         # curated, append-only durable lessons (EOD writes, morning reads)
+│  └─ top5/YYYY-MM-DD.json  # morning's structured picks; trading routine treats as authoritative universe
 ├─ .claude/routines.json # original (cloud) routine intent — not wired
 └─ .env                  # gitignored: Alpaca + SendGrid keys
 ```
