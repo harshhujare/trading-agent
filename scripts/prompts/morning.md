@@ -1,5 +1,5 @@
-Morning research routine. The trading day in ET is: $(TZ=America/New_York date +%F).
-Today's journal file: journal/$(TZ=America/New_York date +%F).md
+Morning research routine. The trading day in ET is: __ET_DATE__.
+Today's journal file: journal/__ET_DATE__.md
 
 CONTEXT (read these first — they give you durable memory across sessions)
 - CLAUDE.md  → rules, decision framework, journal template

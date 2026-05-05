@@ -20,11 +20,13 @@ set +a
 # Self-heal TLS for SendGrid (matches what notify.py does internally)
 export SSL_CERT_FILE="$(/usr/local/bin/python3 -c 'import certifi; print(certifi.where())')"
 
-# Note: the prompt file uses $(TZ=America/New_York date +%F) shell substitutions
-# so the agent reads literal dates, not unsubstituted shell expressions.
-PROMPT="$(eval "cat <<__PROMPT_EOF__
-$(cat "$PROMPT_FILE")
-__PROMPT_EOF__")"
+# Resolve the date placeholder safely. We deliberately avoid `eval` here: an
+# earlier version used `eval cat <<EOF` which was happy to interpret any shell
+# metachar in the prompt (`{a|b}`, `<placeholder>`, `|`, backslashes, etc.)
+# and crashed both trading + eod runs. sed substitution touches only the literal
+# placeholder __ET_DATE__ and leaves all other characters in the prompt intact.
+ET_DATE="$(TZ=America/New_York date +%F)"
+PROMPT="$(sed "s|__ET_DATE__|$ET_DATE|g" "$PROMPT_FILE")"
 
 echo "=== $(date) | starting $ROUTINE ===" >&2
 # Prompt goes via stdin to avoid being eaten by --add-dir (which is greedy: takes

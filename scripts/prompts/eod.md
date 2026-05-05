@@ -1,9 +1,9 @@
-End-of-day reflection. The most recent US trading day in ET is: $(TZ=America/New_York date +%F).
+End-of-day reflection. The most recent US trading day in ET is: __ET_DATE__.
 This routine fires the morning AFTER the trading day, so use the ET date above as the journal target.
-Today's journal file: journal/$(TZ=America/New_York date +%F).md
+Today's journal file: journal/__ET_DATE__.md
 
 STEPS
-1. Verify journal/$(TZ=America/New_York date +%F).md exists. If not, fall back to the most recent journal/YYYY-MM-DD.md (excluding SUMMARY.md).
+1. Verify journal/__ET_DATE__.md exists. If not, fall back to the most recent journal/YYYY-MM-DD.md (excluding SUMMARY.md).
 2. Read CLAUDE.md, that journal entry (already has Portfolio Status, Market Research, Trades Executed from earlier routines), and journal/lessons.md (so you don't duplicate lessons that already exist).
 3. python3 scripts/research.py account; python3 scripts/research.py positions for closing portfolio state. Note any drift since the trading-session entry.
 4. Append the ## End-of-Day Reflection section: 2-4 sentences on what worked, what didn't, what to watch next session. Always write this — even on no-trade days.

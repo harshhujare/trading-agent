@@ -1,18 +1,18 @@
-Trading session. The trading day in ET is: $(TZ=America/New_York date +%F).
-Today's journal file: journal/$(TZ=America/New_York date +%F).md
+Trading session. The trading day in ET is: __ET_DATE__.
+Today's journal file: journal/__ET_DATE__.md
 
 CONTEXT (read these first)
 - CLAUDE.md  → rules
 - watchlist.json  → per-symbol max_allocation_pct
 - journal/SUMMARY.md  → recent positions + trade rationale + reflections
 - journal/lessons.md  → durable lessons
-- journal/$(TZ=America/New_York date +%F).md  → morning research, including the TOP 5 + per-ticker conviction
+- journal/__ET_DATE__.md  → morning research, including the TOP 5 + per-ticker conviction
 
 STEPS
-1. Read all five context files above.
+1. Read all five context files above. **Find today's journal's "TOP 5 Candidates" section. Write down the exact 5 ticker symbols. These are the ONLY tickers you may act on.** Morning has already done the research; your job is execution, not re-scanning. If you feel the urge to consider a ticker that's not in the morning's top 5, the answer is no.
 2. Run: python3 scripts/trade.py status. If is_open=false, append "trading session skipped: market closed" to today's journal and stop.
 3. python3 scripts/research.py account; python3 scripts/research.py positions.
-4. For each of the morning's TOP 5 candidates only: apply the CLAUDE.md decision framework AND the lessons from journal/lessons.md. Decide BUY / SELL / HOLD.
+4. For each of the morning's TOP 5 (and ONLY those 5): apply the CLAUDE.md decision framework AND the lessons from journal/lessons.md. Decide BUY / SELL / HOLD. If a pick's morning data isn't compelling enough to act on, mark it HOLD — do NOT substitute a different ticker.
    - For BUY/SELL, fetch a recent quote and use a limit price within 0.2% of current ask.
    - Submit with structured metadata so trades.jsonl gets a real audit trail:
      ```

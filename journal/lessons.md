@@ -9,4 +9,5 @@ Format:
 
 ---
 
-(no lessons yet — first entries will land after the first few real trading sessions)
+- 2026-05-04: Trading routine bought 2 of 4 tickers that were NOT in morning's TOP 5 (TSM, LWLG instead of FN, COHR, CRDO). Haiku's trading agent re-scanned rather than honoring morning's research. Action: tighten trading prompt to forbid re-picking, or move trading to Sonnet.
+- 2026-05-04: Limit-price strategy of 0.2% above ask consistently overshot — actual fills came in 0.4-4% below limit (LITE saved $39/share). Aggressive limits are fine; we leave money on the table being too conservative.
