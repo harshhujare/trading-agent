@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-05",
+  "picks": [
+    {
+      "symbol": "FN",
+      "thesis": "Needham Buy confirmed today; bullish MA breakout $635→$684; analyst action catalyst",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Needham reiterates Buy 2026-05-05 12:13 ET"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "AI earnings week; options pricing double-digit moves; strong bullish MA",
+      "conviction": "high",
+      "thesis_type": "earnings",
+      "signal_source": "Earnings volatility watch; 7 AI stocks reporting this week"
+    },
+    {
+      "symbol": "VECO",
+      "thesis": "Earnings today (same day as GFS); bullish momentum above 20/50 MA",
+      "conviction": "medium",
+      "thesis_type": "earnings",
+      "signal_source": "Earnings scheduled May 5, 2026"
+    },
+    {
+      "symbol": "AVGO",
+      "thesis": "Roundhill ETF filing today; Broadcom infrastructure beneficiary; +$75 above 50-day MA",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Roundhill filed Magnificent Seven Plus ETF 2026-05-05 09:01 ET"
+    },
+    {
+      "symbol": "ANET",
+      "thesis": "Network infrastructure play; complements GFS/LITE semiconductor thesis; bullish MA",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Sector momentum; AI capex infrastructure wave"
+    }
+  ]
+}
