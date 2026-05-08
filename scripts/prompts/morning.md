@@ -15,12 +15,7 @@ STEPS
    - bearish or mixed ma_signal → low (consider only if news is exceptionally strong)
    - news older than 7 days → discount
    - apply lessons from journal/lessons.md (e.g., if a lesson says "discount Cramer mentions" or "X sector underperformed", weight accordingly)
-5. Run: python3 scripts/research.py account; python3 scripts/research.py positions.
-6. Create today's journal file using the CLAUDE.md template. Fill in:
-   - ## Portfolio Status (cash, positions, total value)
-   - ## Market Research — for each TOP 5: 2-3 short bullets (MA read, news, BUY/HOLD/SELL lean, conviction low|medium|high). Reference any relevant lessons. For the other 22: ONE combined line "Other watchlist (no action signal): TICK1, TICK2, ..."
-   Leave Trades Executed, Positions Closed, End-of-Day Reflection sections present but empty for the later routines to fill in.
-7. **Write journal/top5/__ET_DATE__.json** — this is the structured handoff to the trading routine. The 5 symbols here are the ONLY tickers trading is allowed to act on, so keep them consistent with what you wrote in the markdown's TOP 5 section. Schema:
+5. **Write `journal/top5/__ET_DATE__.json` IMMEDIATELY (before any other writes).** This is the structured handoff to the trading routine, which fires 15 min after you and skips the day if this file is missing. Land it ASAP so a slow analysis phase below can't strand trading. Schema:
    ```json
    {
      "trading_day": "__ET_DATE__",
@@ -29,6 +24,11 @@ STEPS
      ]
    }
    ```
-   Exactly 5 entries.
+   Exactly 5 entries. Picks here MUST match the TOP 5 you write into the markdown journal in step 7.
+6. Run: python3 scripts/research.py account; python3 scripts/research.py positions.
+7. Create today's journal file using the CLAUDE.md template. Fill in:
+   - ## Portfolio Status (cash, positions, total value)
+   - ## Market Research — for each TOP 5: 2-3 short bullets (MA read, news, BUY/HOLD/SELL lean, conviction low|medium|high). Reference any relevant lessons. For the other 22: ONE combined line "Other watchlist (no action signal): TICK1, TICK2, ..."
+   Leave Trades Executed, Positions Closed, End-of-Day Reflection sections present but empty for the later routines to fill in.
 
-Be concise — bullets, not paragraphs. Only the TOP 5 get the deep treatment. Total tool calls expected: ~6 (status, scan, account, positions, write journal, write top5.json).
+Be concise — bullets, not paragraphs. Only the TOP 5 get the deep treatment. Total tool calls expected: ~6 (status, scan, write top5.json, account, positions, write journal).

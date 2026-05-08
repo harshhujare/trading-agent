@@ -30,13 +30,15 @@ PROMPT="$(sed "s|__ET_DATE__|$ET_DATE|g" "$PROMPT_FILE")"
 
 # Trading-only: wait for morning's top5/<ET_DATE>.json to land before invoking
 # claude. The 15-min schedule gap (morning 9:45 → trading 10:00 ET) is too
-# tight when the Mac wakes from sleep and both jobs fire late: on 2026-05-06
-# trading found no top5.json and bailed while morning was still running, then
-# morning wrote the file ~9 min later. Poll up to 12 minutes; if still missing,
-# fall through and let the prompt's existing skip path handle it.
+# tight when the Mac wakes from sleep and both jobs fire late, or when haiku's
+# morning research wanders. On 2026-05-06 trading bailed while morning was
+# still running. On 2026-05-07 the file was written 90 seconds after a 12-min
+# poll timed out — so cap raised to 20 min. Morning was also reordered to
+# write top5.json before the long-form journal markdown, so the file should
+# now land within the first few minutes of morning's run.
 if [[ "$ROUTINE" == "trading" ]]; then
     TOP5_FILE="$PROJECT_DIR/journal/top5/$ET_DATE.json"
-    for _ in $(seq 1 72); do
+    for _ in $(seq 1 120); do  # 120 * 10s = 1200s = 20 minutes
         [[ -f "$TOP5_FILE" ]] && break
         sleep 10
     done
