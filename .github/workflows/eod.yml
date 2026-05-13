@@ -63,9 +63,14 @@ jobs:
           # whichever input has a real value.
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # show_full_output: surface tool calls + agent transcript in the
+          # workflow log. Default is to hide them ("for security"), which makes
+          # diagnosing "claude did nothing useful" runs impossible.
+          show_full_output: true
           prompt: ${{ env.EOD_PROMPT }}
           claude_args: |
             --model haiku
+            --max-turns 25
             --allowedTools Bash,Read,Write,Edit,Glob,Grep
 
       - name: Finalize — commit + push journal/
