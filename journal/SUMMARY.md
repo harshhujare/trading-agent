@@ -1,25 +1,15 @@
 # Journal Summary
 
-_Generated 2026-05-13 10:01 from 7 of 8 entries (2026-05-04 → 2026-05-12)_
+_Generated 2026-05-13 10:21 from 7 of 9 entries (2026-05-05 → 2026-05-13)_
 
-## Latest Portfolio Status _(from 2026-05-12)_
+## Latest Portfolio Status _(from 2026-05-13)_
 
-- Cash: $64,569.07
-- Positions: AAOI (15 @ $162.17, +26.76%), ALAB (15 @ $200.00, +4.32%), ANET (25 @ $140.35, -0.78%), AVGO (11 @ $421.82, +1.49%), COHR (12 @ $331.39, +14.21%), GFS (58 @ $67.53, +6.92%), LITE (5 @ $954.69, +12.58%), TSM (12 @ $403.14, -0.43%), VECO (80 @ $49.75, +21.60%)
-- Total Position Value: $38,167.14
-- Total Value: $102,736.21
+- Cash: $59,887.21
+- Positions: AAOI (15 @ $162.17, +24.24%), ALAB (15 @ $200.00, +4.95%), ANET (25 @ $140.35, +3.28%), AVGO (11 @ $421.82, +0.23%), COHR (13 @ $334.23, +19.90%), GFS (58 @ $67.53, +9.00%), LITE (5 @ $954.69, +9.36%), NVDA (20 @ $215.68, +5.05%), TSM (12 @ $403.14, -0.40%), VECO (80 @ $49.75, +27.64%)
+- Total Position Value: $43,573.40
+- Total Value: $103,460.61
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-04
-| Time (UTC) | Symbol | Action | Qty | Limit | Filled @ | Reasoning |
-|------|--------|--------|-----|-------|----------|-----------|
-| 14:35:25 | TSM   | BUY | 12 | $406.78 | $403.14 | momentum_technical, conv=high (NOT in morning's TOP 5) |
-| 14:35:31 | LITE  | BUY |  5 | $993.01 | $954.69 | momentum_technical, conv=medium-high (in morning's TOP 5) |
-| 14:35:34 | GFS   | BUY | 58 | $67.86  | $67.53  | momentum_technical, conv=medium (in morning's TOP 5) |
-| 14:39:11 | LWLG  | BUY | 61 | $16.36  | $16.33  | momentum_technical, conv=high (NOT in morning's TOP 5) |
-
-All 4 limit orders filled. FN, COHR, CRDO from morning's top 5 were NOT bought.
 
 ### 2026-05-05
 | Time | Symbol | Action | Qty | Price | Reasoning |
@@ -70,15 +60,11 @@ No trades placed. High-conviction picks (COHR, ALAB, ANET) all had 0.2% limit-bu
 
 ## Recent Reflections (last 3 days)
 
-### 2026-05-08
-**Execution: Mixed results.** Pending buy orders for COHR, ANET, AAOI, and AVGO all filled overnight at better prices than their day limits (COHR $331.39 vs $369.99 limit; ANET $140.35 vs $184.99 limit; AAOI $162.17 vs $204.99 limit; AVGO $421.82 vs $449.99 limit), confirming the thesis that 0.2%-above-ask limits are often generous. NVDA buy never filled at $139.99 limit—market momentum likely outpaced entry. **Critical issue**: FN sell order at $629.35 expired unfilled, leaving the position still held at current price $621.28 (-9.24% from $684.55 entry). This **violates the 8% mandatory-close hard rule** from CLAUDE.md. FN must be closed immediately at next market open, no discretion allowed.
-
-**Portfolio status EOD**: Cash $63,073.96, long value $37,392.15. Positions now heavily bullish on AI/semiconductor (COHR, ANET, AVGO, AAOI thesis intact). LITE and FN remain weak spots; FN is critical action item.
-
-**Next**: Close FN at market open on next trading day (5/9). Re-evaluate NVDA entry if market pullback creates better entry.
-
 ### 2026-05-11
 Executed mandatory FN close (-8.13%) at market open; position liquidated cleanly. Day delivered strong conviction validation: AVGO (+2.05%, fresh financing catalyst), TSM (+high conviction despite pullback, Applied Materials partnership), LITE (+7.24% intraday on Nasdaq-100 inclusion), COHR filled overnight below unfiled limit due to thesis re-eval (lesson integrity applied). ALAB added late in session at conviction thesis level — suggests trading routine re-scanned and honored current research. Portfolio +0.95% day, all major winners thesized before open (VECO +22%, GFS +9.9%, LITE +7.24%). Watch ALAB thesis (analyst PT cushion), re-test unfilled buys (COHR's 5/8 $369.99 limit) as they prove re-evaluation > drop-and-forget.
 
 ### 2026-05-12
 Both limit orders executed flawlessly — NVDA filled at $215.679 (0.2% below limit) and COHR at $372.88, validating the aggressive 0.2%-above-ask strategy from prior lessons. Wells Fargo's PT upgrade drove the conviction thesis, and the fills demonstrate the market rewarded the entry timing. Portfolio now 10 positions totaling $102.6K with +$1.85K unrealized gains YTD. VECO and AAOI leading (+23.7%, +20.2%), while TSM and AVGO remain slight headwinds. No position breaches the 5% cap. Watch for follow-through in AI/semiconductor momentum (NVDA, COHR) over the next 2-3 trading sessions to validate the Wells Fargo upgrade thesis.
+
+### 2026-05-13
+No trading activity on 2026-05-13 — held all 10 positions through the session. All positions posted intraday gains, with COHR leading at +7.15% intraday and VECO accelerating further (+3.32% intraday, now +27.64% from entry). Portfolio value grew $868 from 2026-05-12's close ($102,592.66) to $103,460.61, driven by broad strength in semiconductor/AI infrastructure positions (COHR, NVDA, LITE, AAOI, GFS all positive). No signals triggered the 8% stop-loss rules or 5% position-cap constraints. Tomorrow: Continue monitoring for mean reversion in VECO and COHR given explosive recent momentum; watch for AI sector rotation or any deterioration in the 20/50-day MA confluence that has been driving conviction.
