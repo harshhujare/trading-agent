@@ -1,0 +1,4 @@
+2026-05-13T09:59:23Z [INFO] [setup/start] setup starting routine=eod et_date=2026-05-13
+2026-05-13T09:59:23Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-13T09:59:23Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-13-eod.log marker=journal/.current-routine
+2026-05-13T09:59:42Z [INFO] [finalize/start] finalizing routine=eod et_date=2026-05-13
