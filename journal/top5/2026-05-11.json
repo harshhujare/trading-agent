@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-11",
+  "picks": [
+    {
+      "symbol": "AVGO",
+      "thesis": "Broadcom $35B Blackstone/Apollo private credit deal + OpenAI $18B chip procurement catalyst reinforces AI infrastructure dominance.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Broadcom private credit deal and OpenAI $18B chip deal (5/11)"
+    },
+    {
+      "symbol": "TSM",
+      "thesis": "Applied Materials partnership for next-gen AI semiconductor technology acceleration; bullish MA supports breakout.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "AMAT next-gen AI partnership (5/11)"
+    },
+    {
+      "symbol": "LITE",
+      "thesis": "Nasdaq-100 index inclusion on 5/18 is structural demand catalyst; bullish MA setup intact.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Nasdaq-100 inclusion announcement (5/11)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "TD Cowen $395 PT + bullish MA breakout; re-evaluate at current $329.65 (unfilled $369.99 limit on 5/8, thesis intact per re-evaluation lesson).",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "TD Cowen $395 PT (5/7) + bullish MA"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "Barclays $200 PT + bullish MA breakout above 50-day MA; re-evaluate thesis at current $203.04 level (lesson: unfilled limits → re-evaluate, not drop).",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Barclays $200 PT (5/7) + bullish MA"
+    }
+  ]
+}

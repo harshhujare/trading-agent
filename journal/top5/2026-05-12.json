@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-12",
+  "picks": [
+    {
+      "symbol": "LITE",
+      "thesis": "Nasdaq-100 inclusion catalyst with bullish MA breakout; momentum continuation on structural demand.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Nasdaq Index Inclusion announcement (5/11)"
+    },
+    {
+      "symbol": "NVDA",
+      "thesis": "Wells Fargo raises PT to $315 with bullish MA (198 vs 187 50-day); leadership in AI infrastructure.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Wells Fargo PT raise (5/12 13:38)"
+    },
+    {
+      "symbol": "AVGO",
+      "thesis": "Bullish MA continuation; AI capex tailwinds support semiconductor infrastructure demand.",
+      "conviction": "medium",
+      "thesis_type": "ma_crossover",
+      "signal_source": "MA breakout + AI capex thesis"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "Bullish MA with +14.2% unrealized; AI earnings week thesis intact across infrastructure.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "AI earnings week + MA strength"
+    },
+    {
+      "symbol": "GFS",
+      "thesis": "Bullish MA (+13.2% above 50-day); Susquehanna target $125 reflects chip demand tailwinds.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Susquehanna PT raise (5/11)"
+    }
+  ]
+}

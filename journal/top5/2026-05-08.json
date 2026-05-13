@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-08",
+  "picks": [
+    {
+      "symbol": "NVDA",
+      "thesis": "AI leadership with Five-Layer Cake strategy catalyst driving reasoning-based compute demand",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "NVIDIA Five-Layer Cake AI strategy announcement (today)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "Bullish MA breakout sustained; TD Cowen analyst confidence at PT $395 remains catalyst",
+      "conviction": "high",
+      "thesis_type": "news+ma",
+      "signal_source": "TD Cowen upgrade PT $395 + bullish MA, unfilled limits re-evaluated at new level"
+    },
+    {
+      "symbol": "ANET",
+      "thesis": "Network infrastructure momentum with Barclays Overweight and PT $195 upgrade",
+      "conviction": "high",
+      "thesis_type": "news+ma",
+      "signal_source": "Barclays Overweight rating PT $195 + bullish MA continuation"
+    },
+    {
+      "symbol": "AAOI",
+      "thesis": "Applied optoelectronics breakout with Rosenblatt Buy and PT $220 catalyzing optical momentum",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Rosenblatt Buy rating PT $220 (today) + bullish MA breakout"
+    },
+    {
+      "symbol": "AVGO",
+      "thesis": "AI infrastructure play leveraging OpenAI $18B chip deal demand despite near-term financing risks",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "OpenAI $18B chip deal infrastructure demand signal (today)"
+    }
+  ]
+}

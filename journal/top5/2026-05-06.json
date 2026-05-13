@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-06",
+  "picks": [
+    {
+      "symbol": "ALAB",
+      "thesis": "Susquehanna analyst upgrade to Positive with $230 PT; current $183 entry is 20% below target. Bullish MA breakout above 20-day.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Susquehanna PT $230 upgrade (2026-05-06)"
+    },
+    {
+      "symbol": "GFS",
+      "thesis": "Susquehanna Positive upgrade fresh today with $100 PT; continuation of 5/5 earnings-beat thesis. Already +3.73% YTD on position.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Susquehanna Positive upgrade (2026-05-06)"
+    },
+    {
+      "symbol": "NVDA",
+      "thesis": "OpenAI ecosystem partnership announcement (Microsoft, AMD, Intel, Broadcom) signals AI infrastructure acceleration. Bullish MA trend intact.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "OpenAI partnership (2026-05-06)"
+    },
+    {
+      "symbol": "CRDO",
+      "thesis": "Whale alerts + telecom earnings week. Institutional accumulation signal; 14% above 50-day MA. Watch for earnings beat catalyst.",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Whale alerts + earnings week setup (2026-05-05)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "High-conviction missed pick from 5/5; unfilled due to >1% momentum run. Thesis intact (AI earnings week). Re-evaluate at current levels per lessons.",
+      "conviction": "medium",
+      "thesis_type": "earnings",
+      "signal_source": "Telecom earnings week + bullish MA (2026-05-05)"
+    }
+  ]
+}

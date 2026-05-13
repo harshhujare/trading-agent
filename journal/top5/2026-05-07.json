@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-07",
+  "picks": [
+    {
+      "symbol": "COHR",
+      "thesis": "Rosenblatt Buy rating with PT $425 (fresh today). Bullish MA breakout ($303.43 20d > $272.98 50d). Unfilled from 5/5 top5 but thesis strengthened.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Rosenblatt Markets Buy rating PT raise (2026-05-07)"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "JP Morgan Overweight with PT $280 (yesterday). Bullish MA ($159.06 20d > $136.56 50d) with 52.8% upside to PT. High-conviction signal from 5/6 morning research.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "JP Morgan Overweight rating PT raise (2026-05-06)"
+    },
+    {
+      "symbol": "ANET",
+      "thesis": "UBS Buy rating with PT $187 (yesterday). Bullish MA ($153.17 20d > $140.91 50d). Networking/infrastructure play with analyst momentum.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "UBS Buy rating PT raise (2026-05-06)"
+    },
+    {
+      "symbol": "NVDA",
+      "thesis": "Fresh news: Anthropic using Nvidia GPU cluster (today). Bullish MA ($193.21 20d > $186.21 50d). AI infrastructure catalyst validates computational demand.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Anthropic AI infrastructure demand signal (2026-05-07)"
+    },
+    {
+      "symbol": "CRDO",
+      "thesis": "Whale accumulation signal (2 days ago). Bullish MA ($144.74 20d > $124.64 50d). Institutional buying suggests insider confidence.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Whale alerts institutional accumulation (2026-05-05)"
+    }
+  ]
+}
