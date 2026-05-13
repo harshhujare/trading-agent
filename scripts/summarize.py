@@ -8,6 +8,8 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+from runlog import log
+
 JOURNAL_DIR = Path(__file__).resolve().parent.parent / "journal"
 SUMMARY_PATH = JOURNAL_DIR / "SUMMARY.md"
 LOOKBACK_DAYS = 7
@@ -37,8 +39,10 @@ def extract_section(text, heading):
 
 def summarize():
     entries = list_entries()
+    log("summarize", "start", "scanning journal", n_entries=len(entries))
     if not entries:
         SUMMARY_PATH.write_text("# Journal Summary\n\n_No entries yet._\n")
+        log("summarize", "done", "wrote empty summary", path=str(SUMMARY_PATH))
         print(f"wrote {SUMMARY_PATH} (empty)")
         return
 
@@ -81,6 +85,13 @@ def summarize():
         "",
     ]
     SUMMARY_PATH.write_text("\n".join(out))
+    log("summarize", "done", "wrote summary",
+        path=str(SUMMARY_PATH),
+        latest=latest.stem,
+        window_start=recent[0].stem,
+        window_end=recent[-1].stem,
+        n_trade_blocks=len(trade_blocks),
+        n_reflection_blocks=len(reflection_blocks))
     print(f"wrote {SUMMARY_PATH}")
 
 

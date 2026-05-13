@@ -6,6 +6,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import json
 
+from runlog import log
+
 ALPACA_KEY = os.getenv("APCA_API_KEY_ID")
 ALPACA_SECRET = os.getenv("APCA_API_SECRET_KEY")
 BASE_URL = os.getenv("APCA_BASE_URL")
@@ -43,7 +45,13 @@ def get_account():
     }
     url = f"{BASE_URL}/v2/account"
     response = requests.get(url, headers=headers, timeout=HTTP_TIMEOUT)
-    return response.json()
+    data = response.json()
+    log("research", "account", "fetched account",
+        level="INFO" if response.ok else "WARN",
+        http_status=response.status_code,
+        cash=data.get("cash"),
+        portfolio_value=data.get("portfolio_value"))
+    return data
 
 def get_positions():
     """Get all open positions."""
@@ -53,7 +61,12 @@ def get_positions():
     }
     url = f"{BASE_URL}/v2/positions"
     response = requests.get(url, headers=headers, timeout=HTTP_TIMEOUT)
-    return response.json()
+    data = response.json()
+    log("research", "positions", "fetched positions",
+        level="INFO" if response.ok else "WARN",
+        http_status=response.status_code,
+        n_positions=len(data) if isinstance(data, list) else None)
+    return data
 
 def get_news(symbol):
     """Get recent news for a symbol."""
@@ -79,14 +92,18 @@ def scan_watchlist():
     """
     watchlist_path = Path(__file__).resolve().parent.parent / "watchlist.json"
     watchlist = json.loads(watchlist_path.read_text()).get("watchlist", [])
+    log("research", "scan_start", "scanning watchlist", n_tickers=len(watchlist))
 
     results = []
+    n_err = 0
     for entry in watchlist:
         symbol = entry["symbol"]
         try:
             bars_data = get_bars(symbol)
             news_data = get_news(symbol)
         except Exception as e:
+            n_err += 1
+            log("research", "scan_ticker", "fetch failed", level="WARN", symbol=symbol, error=str(e))
             results.append({"symbol": symbol, "error": str(e)})
             continue
 
@@ -128,6 +145,10 @@ def scan_watchlist():
             "top_headline": headline,
         })
 
+    n_bullish = sum(1 for r in results if r.get("ma_signal") == "bullish")
+    n_bearish = sum(1 for r in results if r.get("ma_signal") == "bearish")
+    log("research", "scan_done", "scan complete",
+        n_tickers=len(results), n_errors=n_err, n_bullish=n_bullish, n_bearish=n_bearish)
     return {"scanned_at": datetime.utcnow().isoformat() + "Z", "tickers": results}
 
 

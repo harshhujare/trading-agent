@@ -19,3 +19,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Routine-local state (written by scripts/routine-setup.sh; never committed)
+journal/.current-routine

@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from runlog import log
+
 ALPACA_KEY = os.getenv("APCA_API_KEY_ID")
 ALPACA_SECRET = os.getenv("APCA_API_SECRET_KEY")
 BASE_URL = os.getenv("APCA_BASE_URL")
@@ -66,13 +68,23 @@ def validate_order(symbol, qty, side, current_price, account_value, current_posi
 
     # Check max position size
     if allocation_pct > 5:
-        return False, f"Order exceeds 5% allocation limit: {allocation_pct:.1f}%"
+        reason = f"Order exceeds 5% allocation limit: {allocation_pct:.1f}%"
+        log("trade", "validate", "rejected", level="WARN",
+            symbol=symbol, qty=qty, side=side, reason=reason,
+            allocation_pct=round(allocation_pct, 2))
+        return False, reason
 
     # Check total exposure (positions + this order < 80%)
     total_invested = sum(p['market_value'] for p in current_positions)
     if (total_invested + order_value) / account_value > 0.80:
-        return False, "Order would violate 20% cash reserve requirement"
+        reason = "Order would violate 20% cash reserve requirement"
+        log("trade", "validate", "rejected", level="WARN",
+            symbol=symbol, qty=qty, side=side, reason=reason,
+            total_invested=round(total_invested, 2), account_value=round(account_value, 2))
+        return False, reason
 
+    log("trade", "validate", "passed",
+        symbol=symbol, qty=qty, side=side, allocation_pct=round(allocation_pct, 2))
     return True, "Order validated"
 
 def place_order(symbol, qty, side, limit_price=None, **agent_meta):
@@ -82,11 +94,18 @@ def place_order(symbol, qty, side, limit_price=None, **agent_meta):
     """
     headers = {**AUTH_HEADERS, "Content-Type": "application/json"}
 
+    log("trade", "order_request", "received order request",
+        symbol=symbol, qty=qty, side=side, limit_price=limit_price,
+        thesis_type=agent_meta.get("thesis_type"),
+        conviction=agent_meta.get("conviction"))
+
     # CLAUDE.md hard rule: never place a market order. Enforced for BOTH sides
     # (a missing limit_price on a sell silently became a market order on
     # 2026-05-05 — see journal/lessons.md). Sells skip the allocation
     # validation since they reduce exposure, but they still need a limit.
     if limit_price is None:
+        log("trade", "order_request", "rejected: no limit price", level="WARN",
+            symbol=symbol, side=side)
         return {"error": "validation_failed", "reason": "limit_price required for all orders (CLAUDE.md: no market orders, buy or sell)"}
 
     if side == "buy":
@@ -113,6 +132,13 @@ def place_order(symbol, qty, side, limit_price=None, **agent_meta):
     url = f"{BASE_URL}/v2/orders"
     response = requests.post(url, headers=headers, json=order_data, timeout=HTTP_TIMEOUT)
     result = response.json()
+    log("trade", "order_submit", "alpaca response",
+        level="INFO" if response.ok else "ERROR",
+        symbol=symbol, side=side, qty=qty, limit_price=limit_price,
+        http_status=response.status_code,
+        order_id=result.get("id") if isinstance(result, dict) else None,
+        order_status=result.get("status") if isinstance(result, dict) else None,
+        error=result.get("message") if isinstance(result, dict) and not response.ok else None)
     _log_trade_event(symbol, qty, side, limit_price, result, agent_meta)
     return result
 
@@ -124,6 +150,9 @@ def cancel_all_orders():
     }
     url = f"{BASE_URL}/v2/orders"
     response = requests.delete(url, headers=headers, timeout=HTTP_TIMEOUT)
+    log("trade", "cancel_all", "alpaca response",
+        level="INFO" if response.ok else "WARN",
+        http_status=response.status_code)
     return response.status_code
 
 def get_market_status():
@@ -134,7 +163,14 @@ def get_market_status():
     }
     url = f"{BASE_URL}/v2/clock"
     response = requests.get(url, headers=headers, timeout=HTTP_TIMEOUT)
-    return response.json()
+    data = response.json()
+    log("trade", "market_status", "fetched clock",
+        level="INFO" if response.ok else "WARN",
+        http_status=response.status_code,
+        is_open=data.get("is_open"),
+        next_open=data.get("next_open"),
+        next_close=data.get("next_close"))
+    return data
 
 if __name__ == "__main__":
     action = sys.argv[1]
