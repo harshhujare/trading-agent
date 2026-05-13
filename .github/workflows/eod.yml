@@ -1,0 +1,65 @@
+name: Trading Agent EOD
+
+# 4:15 PM ET, Mon–Fri. EDT (Mar–Nov) is UTC-4 → 20:15 UTC.
+# When standard time begins (~early Nov), ET becomes UTC-5 → 21:15 UTC.
+# Until we add a date-aware guard, flip this cron line at the DST transitions.
+on:
+  schedule:
+    - cron: '15 20 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # finalize step needs to push journal/ commits
+
+jobs:
+  eod:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
+      APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
+      APCA_BASE_URL: ${{ secrets.APCA_BASE_URL }}
+      SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+      NOTIFY_FROM: ${{ secrets.NOTIFY_FROM }}
+      NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python deps
+        run: pip install --quiet certifi sendgrid requests
+
+      - name: Configure git author
+        run: |
+          git config user.email "trading-agent@actions.local"
+          git config user.name  "trading-agent"
+
+      - name: Bootstrap routine state (env check + runlog marker)
+        run: bash scripts/routine-setup.sh eod
+
+      - name: Resolve today's ET date into the prompt
+        run: |
+          ET_DATE="$(TZ=America/New_York date +%F)"
+          echo "ET_DATE=$ET_DATE" >> "$GITHUB_ENV"
+          {
+            echo "EOD_PROMPT<<EOF_EOD_PROMPT"
+            sed "s|__ET_DATE__|$ET_DATE|g" scripts/prompts/eod.md
+            echo "EOF_EOD_PROMPT"
+          } >> "$GITHUB_ENV"
+
+      - name: Run claude — EOD reflection
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: ${{ env.EOD_PROMPT }}
+          claude_args: |
+            --model haiku
+            --allowedTools Bash,Read,Write,Edit,Glob,Grep
+
+      - name: Finalize — commit + push journal/
+        if: always()  # even if claude failed, push whatever partial state landed
+        run: bash scripts/routine-finalize.sh eod

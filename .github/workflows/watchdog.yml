@@ -1,0 +1,59 @@
+name: Trading Agent Watchdog
+
+# 5:30 PM ET, Mon–Fri. EDT (Mar–Nov) is UTC-4 → 21:30 UTC.
+# Standard time (~early Nov onward) is UTC-5 → 22:30 UTC. Flip the cron line
+# at DST transitions, in lockstep with .github/workflows/eod.yml.
+on:
+  schedule:
+    - cron: '30 21 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # finalize step pushes journal/runlog/
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
+      APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
+      APCA_BASE_URL: ${{ secrets.APCA_BASE_URL }}
+      SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+      NOTIFY_FROM: ${{ secrets.NOTIFY_FROM }}
+      NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python deps
+        run: pip install --quiet certifi sendgrid
+
+      - name: Configure git author
+        run: |
+          git config user.email "trading-agent@actions.local"
+          git config user.name  "trading-agent"
+
+      - name: Bootstrap routine state (env check + runlog marker)
+        run: bash scripts/routine-setup.sh watchdog
+
+      - name: Run watchdog check
+        # Exits 1 when an alert was sent, but the runlog is the evidence we
+        # want preserved either way — let finalize push, then signal alert.
+        id: check
+        continue-on-error: true
+        run: python3 scripts/watchdog.py
+
+      - name: Finalize — commit + push runlog
+        if: always()
+        run: bash scripts/routine-finalize.sh watchdog
+
+      - name: Surface alert as workflow failure
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "::error::watchdog detected a missing or empty EOD journal — alert email sent"
+          exit 1
