@@ -2,3 +2,11 @@
 2026-05-13T09:50:29Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
 2026-05-13T09:50:29Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-13-watchdog.log marker=journal/.current-routine
 2026-05-13T09:50:30Z [INFO] [finalize/start] finalizing routine=watchdog et_date=2026-05-13
+2026-05-13T09:52:21Z [INFO] [setup/start] setup starting routine=watchdog et_date=2026-05-13
+2026-05-13T09:52:21Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-13T09:52:21Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-13-watchdog.log marker=journal/.current-routine
+2026-05-13T09:52:22Z [INFO] [watchdog/check] checking journal path=/home/runner/work/trading-agent/trading-agent/journal/2026-05-13.md
+2026-05-13T09:52:22Z [WARN] [watchdog/alert] sending alert email subject="missing journal entry for 2026-05-13"
+2026-05-13T09:52:22Z [INFO] [watchdog/alert] sendgrid response http_status=202
+2026-05-13T09:52:22Z [WARN] [watchdog/check] journal missing — alerted path=/home/runner/work/trading-agent/trading-agent/journal/2026-05-13.md
+2026-05-13T09:52:22Z [INFO] [finalize/start] finalizing routine=watchdog et_date=2026-05-13
