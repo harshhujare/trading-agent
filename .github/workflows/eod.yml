@@ -73,6 +73,16 @@ jobs:
             --max-turns 25
             --allowedTools Bash,Read,Write,Edit,Glob,Grep
 
+      - name: Reset git auth to workflow GITHUB_TOKEN
+        # The claude-code-action swaps the git credential helper to its own
+        # App installation token (used for the bot's edits). That token can't
+        # push to main. Repoint origin back to the standard GITHUB_TOKEN that
+        # actions/checkout set up, which DOES have push (via contents: write).
+        if: always()
+        run: |
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git config --unset-all http.https://github.com/.extraheader || true
+
       - name: Finalize — commit + push journal/
         if: always()  # even if claude failed, push whatever partial state landed
         run: bash scripts/routine-finalize.sh eod
