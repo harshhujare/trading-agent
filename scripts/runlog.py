@@ -59,7 +59,7 @@ def _format(component, level, step, message, fields):
 
 def log(component, step, message="", level="INFO", **fields):
     line = _format(component, level, step, message, fields)
-    path = os.getenv("RUNLOG")
+    path = _resolve_runlog_path()
     if not path:
         print(line, file=sys.stderr)
         return
