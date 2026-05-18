@@ -1,18 +1,15 @@
 # Journal Summary
 
-_Generated 2026-05-15 20:41 from 7 of 11 entries (2026-05-07 → 2026-05-15)_
+_Generated 2026-05-18 20:48 from 7 of 12 entries (2026-05-08 → 2026-05-18)_
 
-## Latest Portfolio Status _(from 2026-05-15)_
+## Latest Portfolio Status _(from 2026-05-18)_
 
-- Cash: $53,511.31
-- Positions: AAOI (15 @ $162.17, +17.98%), ALAB (15 @ $200, +15.3%), ANET (35 @ $141.56, +0.29%), AVGO (11 @ $421.82, +0.66%), COHR (13 @ $334.23, +14.74%), GFS (58 @ $67.53, +4.86%), KEYS (14 @ $352.15, -0.71%), LITE (5 @ $954.69, +0.98%), NVDA (20 @ $215.68, +4.35%), TSM (12 @ $403.14, +0.22%), VECO (80 @ $49.75, +17.87%)
-- Total Position Value: $48,816.71
-- Total Value: $102,328.02
+- Cash: $48,752.74
+- Positions: AAOI (15 @ $172.07, +6.11%), ALAB (15 @ $215.47, +7.74%), ANET (35 @ $141.40, -0.11%), AVGO (11 @ $420.32, -0.36%), CIEN (9 @ $523, -1.08%), COHR (13 @ $361.44, +8.14%), GFS (58 @ $67.84, +0.46%), KEYS (14 @ $340.40, -3.34%), LITE (5 @ $881, -7.72%), NVDA (20 @ $222.26, +3.05%), TSM (12 @ $395.49, -1.90%), VECO (80 @ $55.65, +11.86%)
+- Total Position Value: $51,539.78
+- Total Value: $100,292.52
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-07
-No trades placed. High-conviction picks (COHR, ALAB, ANET) all had 0.2% limit-buy orders that expired unfilled as morning momentum ran past entry levels — thesis intact on re-evaluation; see Lessons re: 5/5 pattern.
 
 ### 2026-05-08
 | Time | Symbol | Action | Qty | Limit | Status | Reasoning |
@@ -52,13 +49,17 @@ Inferred from position changes vs 2026-05-14:
 - ANET: Added 10 shares (25 → 35)
 - KEYS: New position, 14 shares
 
-## Recent Reflections (last 3 days)
+### 2026-05-18
+Inferred from position changes vs 2026-05-15:
+- CIEN: New position, 9 shares (entry at ~$528.73 based on cost basis)
 
-### 2026-05-13
-No trading activity on 2026-05-13 — held all 10 positions through the session. All positions posted intraday gains, with COHR leading at +7.15% intraday and VECO accelerating further (+3.32% intraday, now +27.64% from entry). Portfolio value grew $868 from 2026-05-12's close ($102,592.66) to $103,460.61, driven by broad strength in semiconductor/AI infrastructure positions (COHR, NVDA, LITE, AAOI, GFS all positive). No signals triggered the 8% stop-loss rules or 5% position-cap constraints. Tomorrow: Continue monitoring for mean reversion in VECO and COHR given explosive recent momentum; watch for AI sector rotation or any deterioration in the 20/50-day MA confluence that has been driving conviction.
+## Recent Reflections (last 3 days)
 
 ### 2026-05-14
 Portfolio value grew $339 from 2026-05-13 ($103,460.61) to $103,799.70 (+0.33%). Mixed intraday performance: AVGO and TSM posted strong +5.5% and +4.3% intraday gains respectively; ALAB, ANET, and NVDA also contributed positive momentum. However, AAOI faltered sharply, dropping 11.3% intraday (from +24% to +22% total), and LITE and GFS both weakened (-3.6% and -1.6% intraday). COHR, despite being the largest unrealized gainer (+20%), gave back 0.3% intraday. No stops triggered. VECO, the biggest surprise position (now +21.15% total), barely moved intraday, suggesting consolidation after explosive momentum. Tomorrow: Monitor AAOI closely for signs of capitulation vs. mean reversion; watch whether AVGO/TSM momentum continues or fades. COHR's intraday weakness despite broader AI strength may signal rotation out of that particular name.
 
 ### 2026-05-15
 Portfolio declined $1,471.68 (-1.42%) from 2026-05-14 ($103,799.70 → $102,328.02), a sharp reversal from recent gains. Broad market weakness impacted most positions, with AAOI dropping 4% intraday despite solid fundamentals, ANET giving back momentum despite new purchase, and KEYS opening underwater at -0.71%. The two new/added positions (ANET+10, KEYS×14) were against the broader selloff, suggesting conviction in research thesis despite intraday weakness. VECO remains the standout performer (+17.87%), offsetting weakness in previously strong names like COHR (-5.3% intraday, -6pp from 5/14's +20.42%). The portfolio is now at 11 positions totaling $48.8k in equity; cash reserves at $53.5k provide runway. Watch whether tomorrow's open confirms capitulation or attempts reversal.
+
+### 2026-05-18
+Portfolio declined $2,035.50 (-1.99%) from 2026-05-15 ($102,328.02 → $100,292.52), driven by broad intraday weakness across semiconductor and networking names. LITE led losses (-9.24% intraday, now -7.72% from entry), with COHR, GFS, and ANET also giving back overnight momentum. Cash position dropped $4.7k, consistent with a new position in CIEN (9 @ ~$528.73), suggesting a high-conviction entry despite the red session. VECO remains resilient at +11.86% despite -5.1% intraday pressure. AAOI and ALAB both fell sharply intraday (-9.6%, -7.4%) on what appears to be sector rotation away from mega-cap tech. Watch whether tomorrow's open confirms consolidation or extends the decline — LITE's 10% intraday drop is notable and may warrant a stop-loss review if it closes below -8% threshold.
