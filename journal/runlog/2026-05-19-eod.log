@@ -1,0 +1,10 @@
+2026-05-19T20:49:52Z [INFO] [setup/start] setup starting routine=eod et_date=2026-05-19
+2026-05-19T20:49:52Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-19T20:49:52Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-19-eod.log marker=journal/.current-routine
+2026-05-19T20:50:16Z [INFO] [research/account] fetched account http_status=200 cash=48248.97 portfolio_value=100925.5
+2026-05-19T20:50:16Z [INFO] [research/positions] fetched positions http_status=200 n_positions=12
+2026-05-19T20:50:49Z [INFO] [summarize/start] scanning journal n_entries=13
+2026-05-19T20:50:49Z [INFO] [summarize/done] wrote summary path=/home/runner/work/trading-agent/trading-agent/journal/SUMMARY.md latest=2026-05-19 window_start=2026-05-11 window_end=2026-05-19 n_trade_blocks=5 n_reflection_blocks=3
+2026-05-19T20:50:49Z [INFO] [notify/send] sending digest journal=journal/2026-05-19.md to=mayamit@gmail.com content_bytes=1613
+2026-05-19T20:50:49Z [INFO] [notify/send] sendgrid response http_status=202 msg_id=pDmW-upsTFOlSWyz0C2GDA
+2026-05-19T20:50:58Z [INFO] [finalize/start] finalizing routine=eod et_date=2026-05-19
