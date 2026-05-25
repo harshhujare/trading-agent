@@ -1,0 +1,6 @@
+2026-05-13T13:47:08Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-13 pid=97475
+2026-05-13T13:47:09Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-13T13:47:26Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+Not logged in · Please run /login
+2026-05-13T13:53:18Z [INFO] [run-routine/claude_done] claude finished exit_code=1 duration_seconds=342
+2026-05-13T13:53:28Z [INFO] [run-routine/end] routine done total_seconds=370 exit_code=1

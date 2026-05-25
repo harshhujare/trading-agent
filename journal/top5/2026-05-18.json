@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-18",
+  "picks": [
+    {
+      "symbol": "COHR",
+      "thesis": "NVIDIA increases stake to 47.2M shares (catalyst), bullish MA crossover intact.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "NVIDIA new stake filing (5/15)"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "Chip momentum rolling, premarket $180 breakout, strong 20/50-day MA spread.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Chip sector momentum (5/18 today)"
+    },
+    {
+      "symbol": "KEYS",
+      "thesis": "Susquehanna analyst upgrade to positive, PT $415, bullish MA intact.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Susquehanna upgrade (5/18 today)"
+    },
+    {
+      "symbol": "CIEN",
+      "thesis": "TD Cowen Buy rating, PT $675, strong MA momentum continuation.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "TD Cowen analyst upgrade (5/15)"
+    },
+    {
+      "symbol": "LITE",
+      "thesis": "Tiger Global infrastructure play, bullish MA $886 vs 50-MA $788.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Tiger Global new stakes (5/15)"
+    }
+  ]
+}

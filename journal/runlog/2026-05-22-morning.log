@@ -1,0 +1,26 @@
+2026-05-22T13:45:04Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-22 pid=32703
+2026-05-22T13:45:04Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-22T13:45:05Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-22T13:45:22Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-26T09:30:00-04:00 next_close=2026-05-22T16:00:00-04:00
+2026-05-22T13:45:23Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-22T13:46:04Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=23 n_bearish=1
+2026-05-22T13:46:45Z [INFO] [research/account] fetched account http_status=200 cash=48639.9 portfolio_value=104764.81
+2026-05-22T13:46:46Z [INFO] [research/positions] fetched positions http_status=200 n_positions=12
+Morning research complete. Summary:
+
+**TOP 5 picks (2026-05-22.json written):**
+1. **MRVL** — Stifel PT $210 (HIGH conviction, already +15.33%)
+2. **AVGO** — UCLA $125M AI hub announcement TODAY (HIGH conviction, re-evaluate for scaling)
+3. **TSM** — AMD 2nm Venice + $10B Taiwan investment TODAY (HIGH conviction, re-evaluate)
+4. **COHR** — Manufacturing PMI boom on AI capex (MEDIUM conviction, already +11.36%)
+5. **LITE** — [CLOSED last week; ETF catalyst thesis may have cycled]
+
+**Portfolio snapshot (10:01 AM ET):**
+- Cash: $48.6K | Total: $104.8K
+- 12 positions, all under 5% cap
+- Largest winners: ALAB (+55.75%), GFS (+29.3%), MRVL (+15.33%), VECO (+17.59%)
+- Slight headwinds: AVGO (-0.99%), KEYS (-3.48%)
+
+Journal file and top5.json written. Trading routine will execute at 10:00 AM ET. Monitoring for fresh fill signals.
+2026-05-22T13:47:16Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=131
+2026-05-22T13:47:16Z [INFO] [run-routine/end] routine done total_seconds=132 exit_code=0

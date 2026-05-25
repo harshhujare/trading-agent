@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-22",
+  "picks": [
+    {
+      "symbol": "MRVL",
+      "thesis": "Stifel maintains Buy with PT $210, bullish MA breakout into semiconductor strength.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Stifel PT raise to $210 (5/22 12:27 PM)"
+    },
+    {
+      "symbol": "AVGO",
+      "thesis": "Meta/Broadcom/UCLA $125M AI chip hub partnership announced today, validates infrastructure capex thesis.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "UCLA AI Chip Hub announcement (5/22 9:37 AM)"
+    },
+    {
+      "symbol": "TSM",
+      "thesis": "AMD CEO Lisa Su initiates 2nm Venice production with $10B Taiwan investment, manufacturing boom catalyst.",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "AMD 2nm Venice production initiation (5/22 12:32 PM)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "US manufacturing PMI 48-month high driven by AI infrastructure capex, not tariffs; bullish MA intact.",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Manufacturing PMI boom narrative + MA20 $334.69 > MA50 $290.34"
+    },
+    {
+      "symbol": "LITE",
+      "thesis": "REX 2X leveraged ETF launch on 5/21 targets optical/space momentum, bullish MA continuation.",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "2X leveraged ETF launch (5/21) + MA20 $903.11 > MA50 $799.37"
+    }
+  ]
+}

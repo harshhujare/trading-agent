@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-21",
+  "picks": [
+    {
+      "symbol": "NVDA",
+      "thesis": "Goldman Sachs PT raise on earnings beat; bullish MA momentum intact",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Goldman Sachs analyst action (2026-05-21)"
+    },
+    {
+      "symbol": "GFS",
+      "thesis": "Trump administration $2B quantum investment catalyst; bullish trend acceleration",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Trump quantum funding announcement (2026-05-21)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "Wolfspeed post-bankruptcy recovery up 100% in May; bullish MA continuation",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Citrini Research Wolfspeed highlight (2026-05-20)"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "Whale alerts signal institutional accumulation; semiconductor sector momentum",
+      "conviction": "medium",
+      "thesis_type": "other",
+      "signal_source": "Whale alert tracking (2026-05-20)"
+    },
+    {
+      "symbol": "KEYS",
+      "thesis": "Susquehanna analyst maintains Positive, PT $425; bullish MA trend intact",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Susquehanna analyst action (2026-05-20)"
+    }
+  ]
+}

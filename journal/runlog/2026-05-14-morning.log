@@ -1,0 +1,21 @@
+2026-05-14T13:47:12Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-14 pid=11705
+2026-05-14T13:47:13Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-14T13:47:17Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-14T13:47:45Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-15T09:30:00-04:00 next_close=2026-05-14T16:00:00-04:00
+2026-05-14T13:47:46Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-14T13:48:39Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=21 n_bearish=1
+2026-05-14T13:52:35Z [INFO] [research/account] fetched account http_status=200 cash=59887.21 portfolio_value=103563.61
+2026-05-14T13:52:37Z [INFO] [research/positions] fetched positions http_status=200 n_positions=10
+Morning research complete. **Top 5 candidates identified:**
+
+1. **TSEM** — Wedbush PT raise to $300 + bullish MA (HIGH conviction)
+2. **CRDO** — MEME ETF surge + bullish MA (HIGH conviction)  
+3. **CSCO** — CEO AI infrastructure commentary + bullish MA (MEDIUM)
+4. **MTSI** — Photonics ETF debut catalyst + bullish MA (MEDIUM)
+5. **MRVL** — Semiconductor sector breadth + bullish MA (MEDIUM)
+
+Portfolio status: **$103.5K** across 10 positions, all bullish MA intact. VECO (+21.4%), COHR (+19.6%), AAOI (+29.7%) leading. Cash: $59.9K. 
+
+Journal entry and top5.json written. Trading routine fires at 10:00 AM ET.
+2026-05-14T13:52:58Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=341
+2026-05-14T13:52:58Z [INFO] [run-routine/end] routine done total_seconds=346 exit_code=0

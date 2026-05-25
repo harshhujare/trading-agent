@@ -1,0 +1,11 @@
+2026-05-14T14:06:14Z [INFO] [run-routine/start] routine starting routine=trading et_date=2026-05-14 pid=11969
+2026-05-14T14:06:14Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-14T14:06:17Z [INFO] [run-routine/top5_poll] waiting for morning top5.json path=/Users/AmitGandhi/techshot/trading-agent/journal/top5/2026-05-14.json max_seconds=1200
+2026-05-14T14:06:18Z [INFO] [run-routine/top5_poll] top5.json detected elapsed_seconds=1 iteration=1
+2026-05-14T14:06:18Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/trading.md
+2026-05-14T14:06:47Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-15T09:30:00-04:00 next_close=2026-05-14T16:00:00-04:00
+2026-05-14T14:06:49Z [INFO] [research/account] fetched account http_status=200 cash=59887.21 portfolio_value=103432.31
+2026-05-14T14:06:52Z [INFO] [research/positions] fetched positions http_status=200 n_positions=10
+API Error: Unable to connect to API (FailedToOpenSocket)
+2026-05-15T03:27:30Z [INFO] [run-routine/claude_done] claude finished exit_code=1 duration_seconds=48072
+2026-05-15T03:27:31Z [INFO] [run-routine/end] routine done total_seconds=48076 exit_code=1

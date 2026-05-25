@@ -1,0 +1,24 @@
+2026-05-21T13:45:05Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-21 pid=19653
+2026-05-21T13:45:05Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-21T13:45:05Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-21T13:45:18Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-22T09:30:00-04:00 next_close=2026-05-21T16:00:00-04:00
+2026-05-21T13:45:19Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-21T13:46:02Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=23 n_bearish=1
+2026-05-21T13:46:03Z [INFO] [research/account] fetched account http_status=200 cash=48248.96 portfolio_value=103420.02
+2026-05-21T13:46:04Z [INFO] [research/positions] fetched positions http_status=200 n_positions=12
+Research routine complete. **Top 5 candidates identified and handoff ready:**
+
+| # | Symbol | Catalyst | Conviction | MA Signal |
+|---|--------|----------|-----------|-----------|
+| 1 | NVDA | Goldman PT raise post-earnings (5/21) | High | Bullish |
+| 2 | GFS | Trump $2B quantum investment (5/21) | High | Bullish |
+| 3 | COHR | Wolfspeed +100% post-BK (5/20) | High | Bullish |
+| 4 | MRVL | Whale alerts accumulation (5/20) | Medium | Bullish |
+| 5 | KEYS | Susquehanna PT $425 (5/20) | Medium | Bullish |
+
+✅ `journal/top5/2026-05-21.json` written — trading routine can proceed at 10:00 AM ET
+✅ `journal/2026-05-21.md` created with portfolio status, market research, and empty trade sections for trading routine
+
+Portfolio remains well-positioned: $48.2K cash, 12 positions across semiconductors/AI infrastructure with strong momentum. All top 5 picks have bullish MA confluence and 1-day-old catalyst news. Trading routine fires in ~15 minutes.
+2026-05-21T13:46:49Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=104
+2026-05-21T13:46:49Z [INFO] [run-routine/end] routine done total_seconds=104 exit_code=0

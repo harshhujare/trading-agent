@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-15",
+  "picks": [
+    {
+      "symbol": "KEYS",
+      "thesis": "Baird Outperform upgrade (PT $375) + bullish MA breakout (337 vs 308); AI chip test equipment infrastructure play",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Baird Outperform PT $375 (2026-05-15 12:19)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "Bullish MA (321 vs 281) + AI semiconductor strength; already long +12.6% unrealized",
+      "conviction": "high",
+      "thesis_type": "news+ma",
+      "signal_source": "AI earnings week catalyst + bullish MA confluence"
+    },
+    {
+      "symbol": "LITE",
+      "thesis": "Strong MA trend (884 vs 775) + long-duration winner; macro noise (-6.4% today) does not break thesis",
+      "conviction": "high",
+      "thesis_type": "ma_crossover",
+      "signal_source": "MA confluence 20/50-day (884/775); Nasdaq-100 inclusion catalyst"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "Bullish MA (181 vs 143) + MEME ETF momentum story (2026-05-14); growth infrastructure play",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Roundhill MEME ETF +75% since April; Goldman retail volume jump"
+    },
+    {
+      "symbol": "ANET",
+      "thesis": "Bullish MA (164 vs 144) + infrastructure momentum; holding strength despite macro headwind",
+      "conviction": "medium",
+      "thesis_type": "ma_crossover",
+      "signal_source": "Network infrastructure strength (Barclays Overweight); Trump trade mention"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+2026-05-18T13:45:06Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-18 pid=61318
+2026-05-18T13:45:06Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-18T13:45:07Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-18T13:45:33Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-19T09:30:00-04:00 next_close=2026-05-18T16:00:00-04:00
+2026-05-18T13:45:36Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-18T13:46:19Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=22 n_bearish=1
+2026-05-18T13:46:52Z [INFO] [research/account] fetched account http_status=200 cash=53511.31 portfolio_value=100879.38
+2026-05-18T13:46:53Z [INFO] [research/positions] fetched positions http_status=200 n_positions=11
+Morning research complete. Summary:
+
+**Portfolio Status (as of 2026-05-18 9:45 AM ET):**
+- Total Value: $100,879.38 (cash: $53,511.31, positions: $47,368.07)
+- 11 positions: AAOI, ALAB, ANET, AVGO, COHR, GFS, KEYS, LITE, NVDA, TSM, VECO
+
+**TOP 5 Picks (written to `journal/top5/2026-05-18.json`):**
+1. **COHR** (high conviction) — NVIDIA new 47.2M share stake (5/15 catalyst), bullish MA intact
+2. **MRVL** (high conviction) — Chip momentum rolling, premarket $180 breakout (today's news)
+3. **KEYS** (high conviction) — Susquehanna analyst upgrade to PT $415 (5/18 fresh)
+4. **CIEN** (high conviction) — TD Cowen Buy, PT $675 (5/15 upgrade)
+5. **LITE** (medium conviction) — Tiger Global infrastructure play, bullish MA momentum
+
+All picks have fresh catalysts (analyst upgrades or NVIDIA's confidence vote). COHR, KEYS, and LITE are already held; MRVL and CIEN are new entry candidates. The trading routine will fire at 10:00 AM ET to evaluate research and execute.
+2026-05-18T13:47:30Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=142
+2026-05-18T13:47:30Z [INFO] [run-routine/end] routine done total_seconds=144 exit_code=0

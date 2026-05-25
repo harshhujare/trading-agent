@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-14",
+  "picks": [
+    {
+      "symbol": "TSEM",
+      "thesis": "Wedbush PT raise to $300 + bullish MA confluence (210.84/173.37) signals strong momentum in AI semiconductor space",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Wedbush PT raise (2026-05-14)"
+    },
+    {
+      "symbol": "CRDO",
+      "thesis": "MEME ETF surge narrative (75% YTD, Goldman retail volume jump) + bullish MA (165.12/130.17) driving retail rotation into high-beta AI names",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Roundhill MEME ETF surge (2026-05-14)"
+    },
+    {
+      "symbol": "CSCO",
+      "thesis": "CEO commentary on proprietary silicon relevance in AI infrastructure (2026-05-14) + bullish MA (87.35/82.32) validates network infrastructure play",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Cisco CEO AI commentary (2026-05-14)"
+    },
+    {
+      "symbol": "MTSI",
+      "thesis": "Photonics ETF debut news (2026-05-13) + bullish MA (273.59/247.67) + 15 holdings >100% YTD drives optical infrastructure momentum",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Photonics ETF debut coverage (2026-05-13)"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "Bullish MA (147.6/113.33) + market-moving news tag (2026-05-14) suggest semiconductor sector breadth in AI infrastructure rotation",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Market-moving news (2026-05-14)"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+2026-05-15T13:45:06Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-15 pid=25026
+2026-05-15T13:45:06Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-15T13:45:08Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-15T13:45:31Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-18T09:30:00-04:00 next_close=2026-05-15T16:00:00-04:00
+2026-05-15T13:45:33Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-15T13:46:15Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=21 n_bearish=1
+2026-05-15T13:46:17Z [INFO] [research/account] fetched account http_status=200 cash=59887.21 portfolio_value=101751.68
+2026-05-15T13:46:20Z [INFO] [research/positions] fetched positions http_status=200 n_positions=10
+✅ Morning research complete. 
+
+**Summary:**
+- Markets open. Red day: all holdings down 3-7% from Fed rate hike fears (56% CME FedWatch by Dec 2026).
+- Top 5 identified and written to `journal/top5/2026-05-15.json` (critical handoff):
+  1. **KEYS** (NEW) — Baird PT $375 upgrade + bullish MA (337 vs 308). Fresh catalyst, AI chip test infrastructure.
+  2. **COHR** (HOLD) — Bullish MA (321 vs 281), already +12.6% unrealized. Thesis intact despite macro noise.
+  3. **LITE** (HOLD) — Strong MA trend (884 vs 775). Macro headwind (-6.4%) is temporary; long-term thesis solid.
+  4. **ALAB** (HOLD) — Bullish MA (181 vs 143), MEME ETF momentum (5/14 catalyst fresh).
+  5. **ANET** (HOLD) — Bullish MA (164 vs 144), infrastructure strength persisting.
+- Journal written with portfolio status, top 5 research notes, and placeholders for trades (trading routine fills at 10:00 AM).
+
+Trading routine fires in ~15 min with this research handoff.
+2026-05-15T13:47:37Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=148
+2026-05-15T13:47:38Z [INFO] [run-routine/end] routine done total_seconds=151 exit_code=0

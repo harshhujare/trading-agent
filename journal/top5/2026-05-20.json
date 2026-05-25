@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-20",
+  "picks": [
+    {
+      "symbol": "CSCO",
+      "thesis": "Rosenblatt 30% upside PT $150 on AI infrastructure pivot",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Rosenblatt 5-20 upgrade"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "Evercore PT raise on AI/data center momentum strength",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Evercore PT raise"
+    },
+    {
+      "symbol": "KEYS",
+      "thesis": "Wells Fargo Overweight PT $390 on AI test/measurement demand",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Wells Fargo 5-20 upgrade"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "NVIDIA 7.8M share stake provides institutional backing for AI infrastructure",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "NVIDIA stake increase 5-15"
+    },
+    {
+      "symbol": "CIEN",
+      "thesis": "Citigroup Buy PT $658 on optical networking/AI capex cycle",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Citigroup 5-18 Buy"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+2026-05-19T13:45:06Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-19 pid=76557
+2026-05-19T13:45:06Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-19T13:45:08Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-19T13:45:36Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-20T09:30:00-04:00 next_close=2026-05-19T16:00:00-04:00
+2026-05-19T13:45:42Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-19T13:46:22Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=24 n_bearish=1
+2026-05-19T13:46:59Z [INFO] [research/account] fetched account http_status=200 cash=48752.74 portfolio_value=99418.09
+2026-05-19T13:47:00Z [INFO] [research/positions] fetched positions http_status=200 n_positions=12
+**Morning research complete.** 
+
+**Summary:**
+- Market open ✓
+- 27-ticker scan completed
+- TOP 5 picks written to `journal/top5/2026-05-19.json`: MRVL (Evercore upgrade), AVGO (Wells Fargo/TD Cowen/UBS upgrades), ALAB (Evercore upgrade), CIEN (Citigroup Buy), GFS (venture fund catalyst)
+- Journal entry created with portfolio status and research detail
+
+**Critical Alert:** LITE has dropped 8.29% from entry ($954.69 → $875.54), exceeding the 8% hard stop-loss threshold. Trading routine must close this position at market.
+
+Ready for 10:00 AM trading execution. The top5.json handoff ensures the trading routine has the picks it needs.
+2026-05-19T13:47:25Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=137
+2026-05-19T13:47:25Z [INFO] [run-routine/end] routine done total_seconds=139 exit_code=0

@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-19",
+  "picks": [
+    {
+      "symbol": "MRVL",
+      "thesis": "Evercore ISI raises PT to $155; bullish MA confluence signals semiconductor momentum continuation",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Evercore ISI 2026-05-19 11:11 AM"
+    },
+    {
+      "symbol": "AVGO",
+      "thesis": "Wells Fargo, TD Cowen, UBS all raising targets; infrastructure play ahead of earnings",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Wells Fargo/TD Cowen/UBS 2026-05-19 10:54 AM"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "Evercore raises PT to $297; AI semiconductor infrastructure, bullish MA, room to add to position",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Evercore ISI 2026-05-19 10:44 AM"
+    },
+    {
+      "symbol": "CIEN",
+      "thesis": "Citigroup Buy with PT $658; optical/networking momentum aligned with photonics theme",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Citigroup 2026-05-18 17:54 PM"
+    },
+    {
+      "symbol": "GFS",
+      "thesis": "GF Accelerate venture fund launch; foundry infrastructure catalyst, bullish MA, existing position thesis intact",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "GlobalFoundries 2026-05-19 12:32 PM"
+    }
+  ]
+}

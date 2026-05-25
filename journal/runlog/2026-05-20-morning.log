@@ -1,0 +1,25 @@
+2026-05-20T13:45:06Z [INFO] [run-routine/start] routine starting routine=morning et_date=2026-05-20 pid=8318
+2026-05-20T13:45:07Z [INFO] [run-routine/env] env loaded alpaca_key_present=true alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-05-20T13:45:10Z [INFO] [run-routine/claude_invoke] invoking claude model=haiku max_budget_usd=1.00 prompt_file=/Users/AmitGandhi/techshot/trading-agent/scripts/prompts/morning.md
+2026-05-20T13:45:35Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-21T09:30:00-04:00 next_close=2026-05-20T16:00:00-04:00
+2026-05-20T13:45:41Z [INFO] [research/scan_start] scanning watchlist n_tickers=27
+2026-05-20T13:46:24Z [INFO] [research/scan_done] scan complete n_tickers=27 n_errors=0 n_bullish=23 n_bearish=1
+2026-05-20T13:47:19Z [INFO] [research/account] fetched account http_status=200 cash=48248.96 portfolio_value=102072.71
+2026-05-20T13:47:22Z [INFO] [research/positions] fetched positions http_status=200 n_positions=12
+Morning research complete. Summary:
+
+**Portfolio Snapshot (as of 9:46 AM ET, 2026-05-20)**
+- Cash: $48,248.96 | Total Value: $102,072.71
+- 12 positions: all profitable except KEYS (-2.6%), AVGO (-1.8%), TSM (-0.8%)
+- Top performers: ALAB +32.6%, VECO +14.4%, MRVL +12.6%, COHR +8.1%
+
+**TOP 5 Research Picks** (written to `journal/top5/2026-05-20.json`):
+1. **CSCO** — Rosenblatt PT $150 (30% upside) on AI infrastructure pivot — new BUY candidate
+2. **MRVL** — Evercore PT raise, already +12.6%, HOLD with conviction
+3. **KEYS** — Wells Fargo PT $390, bullish MA, HOLD (slight dip = entry opportunity)
+4. **COHR** — NVIDIA 7.8M share stake backing, +8.1%, HOLD with conviction
+5. **CIEN** — Citigroup Buy PT $658 on optical/AI capex, +4.8%, HOLD with conviction
+
+All picks driven by **fresh catalyst + bullish MA signals**. Other 22 tickers show either stale news, mixed MA signals, or are already held with no new reason to add. Trading routine fires in 14 minutes with the structured handoff ready.
+2026-05-20T13:48:07Z [INFO] [run-routine/claude_done] claude finished exit_code=0 duration_seconds=177
+2026-05-20T13:48:08Z [INFO] [run-routine/end] routine done total_seconds=181 exit_code=0
