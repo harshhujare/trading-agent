@@ -1,13 +1,10 @@
 # Journal Summary
 
-_Generated 2026-05-25 17:09 from 7 of 16 entries (2026-05-14 → 2026-05-22)_
+_Generated 2026-05-25 20:46 from 7 of 17 entries (2026-05-15 → 2026-05-25)_
 
-## Latest Portfolio Status _(from 2026-05-22)_
+## Latest Portfolio Status _(from 2026-05-25)_
 
-- Cash: $47,400.83
-- Positions: 12 holdings (AAOI, ALAB, ANET, AVGO, CIEN, COHR, GFS, KEYS, MRVL, NVDA, TSM, VECO)
-- Total Portfolio Value: $104,914.00
-- Position Market Value: $57,513.17
+_not recorded_
 
 ## Recent Trades (last 7 days)
 
@@ -61,11 +58,11 @@ _Generated 2026-05-25 17:09 from 7 of 16 entries (2026-05-14 → 2026-05-22)_
 
 ## Recent Reflections (last 3 days)
 
-### 2026-05-20
-Portfolio recovered $1,318.26 (+1.31%) from yesterday's close, driven by strong sector momentum across semiconductor and infrastructure plays. ALAB led with +17.09% intraday, while MRVL (+7.22%), GFS (+5.88%), and VECO (+3.58%) all posted solid gains. The broad-based strength across positions suggests tailwinds in tech/infrastructure despite some profit-taking in micro-cap (AAOI -3.93%, KEYS -1.78%). Portfolio concentration remains within limits with ALAB the largest position at 4.2% of total value. Watch for mean reversion on ALAB's outsized intraday performance or confirmation of sustained momentum into next session.
-
 ### 2026-05-21
 Portfolio surged $2,038.56 (+1.99%) from 2026-05-20 close, with broad-based strength across semiconductor and infrastructure plays. ALAB led gains at +3.66% intraday, CIEN +5.74%, COHR +5.86%, and GFS +16.58%, while NVDA and KEYS both modestly negative (-1.69%, -1.32%). Position rebalancing today (reduced GFS and MRVL winners, added NVDA on dip) suggests tactical profit-taking from strong performers while maintaining core convictions. Portfolio remains well-within concentration limits; largest position (ALAB) at 4.28% of total value. Watch whether intraday strength persists into next session or consolidates as profit-taking momentum exhausts.
 
 ### 2026-05-22
 Portfolio at 12 positions with strong performers (ALAB +52.7% unrealized, MRVL +16.5%, GFS +26.5%) offsetting mild underperformers (NVDA -0.73%, AVGO -1.86%). Cash position at $47.4k (45% of portfolio) reflects two scaling buys executed intraday (AVGO +2 @ $416.51, TSM +1 @ $409.37 — see Trades Executed above). Both adds were high-conviction news-catalyst plays on the Meta/Broadcom/UCLA partnership and AMD's 2nm Venice investment. No 8% stop-loss triggers; holding remaining positions and monitoring for next session's research signals.
+
+### 2026-05-25
+Weekend session: markets closed, no activity. Portfolio held steady at 11 positions with net unrealized gains across most holdings. AVGO and KEYS remain slightly underwater (-1.6% each), but well above the 8% mandatory-close threshold. Watch for Monday research window to identify any catalysts or technical setups for the week ahead.
