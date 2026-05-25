@@ -1,0 +1,5 @@
+2026-05-25T14:41:20Z [INFO] [setup/start] setup starting routine=morning et_date=2026-05-25
+2026-05-25T14:41:20Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=false
+2026-05-25T14:41:20Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-25-morning.log marker=journal/.current-routine
+2026-05-25T14:41:38Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=False next_open=2026-05-26T09:30:00-04:00 next_close=2026-05-26T16:00:00-04:00
+2026-05-25T14:41:44Z [INFO] [finalize/start] finalizing routine=morning et_date=2026-05-25
