@@ -1,0 +1,75 @@
+name: Trading Agent Morning
+
+# 9:45 AM ET, Mon–Fri. EDT (Mar–Nov) is UTC-4 → 13:45 UTC.
+# When standard time begins (~early Nov), ET becomes UTC-5 → 14:45 UTC.
+# Until we add a date-aware guard, flip this cron line at the DST transitions
+# in lockstep with .github/workflows/{trading,eod,watchdog}.yml.
+on:
+  schedule:
+    - cron: '45 13 * * 1-5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # finalize step needs to push journal/ commits
+  id-token: write   # required by anthropics/claude-code-action for OIDC
+
+jobs:
+  morning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      APCA_API_KEY_ID: ${{ secrets.APCA_API_KEY_ID }}
+      APCA_API_SECRET_KEY: ${{ secrets.APCA_API_SECRET_KEY }}
+      APCA_BASE_URL: ${{ secrets.APCA_BASE_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python deps
+        run: pip install --quiet certifi requests
+
+      - name: Configure git author
+        run: |
+          git config user.email "trading-agent@actions.local"
+          git config user.name  "trading-agent"
+
+      - name: Bootstrap routine state (env check + runlog marker)
+        run: bash scripts/routine-setup.sh morning
+
+      - name: Resolve today's ET date into the prompt
+        run: |
+          ET_DATE="$(TZ=America/New_York date +%F)"
+          echo "ET_DATE=$ET_DATE" >> "$GITHUB_ENV"
+          {
+            echo "MORNING_PROMPT<<EOF_MORNING_PROMPT"
+            sed "s|__ET_DATE__|$ET_DATE|g" scripts/prompts/morning.md
+            echo "EOF_MORNING_PROMPT"
+          } >> "$GITHUB_ENV"
+
+      - name: Run claude — morning research
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: true
+          prompt: ${{ env.MORNING_PROMPT }}
+          claude_args: |
+            --model haiku
+            --max-turns 25
+            --allowedTools Bash,Read,Write,Edit,Glob,Grep
+
+      - name: Reset git auth to workflow GITHUB_TOKEN
+        # claude-code-action swaps the credential helper to its App token, which
+        # can't push to main. Repoint origin back to GITHUB_TOKEN (contents: write).
+        if: always()
+        run: |
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git config --unset-all http.https://github.com/.extraheader || true
+
+      - name: Finalize — commit + push journal/
+        if: always()
+        run: bash scripts/routine-finalize.sh morning
