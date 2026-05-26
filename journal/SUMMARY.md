@@ -1,18 +1,14 @@
 # Journal Summary
 
-_Generated 2026-05-25 20:46 from 7 of 17 entries (2026-05-15 → 2026-05-25)_
+_Generated 2026-05-26 20:55 from 7 of 18 entries (2026-05-18 → 2026-05-26)_
 
-## Latest Portfolio Status _(from 2026-05-25)_
+## Latest Portfolio Status _(from 2026-05-26)_
 
-_not recorded_
+- Cash: $47,400.83
+- Positions: AAOI (15 @ $162.17), ALAB (15 @ $200), ANET (35 @ $141.56), AVGO (13 @ $420.84), CIEN (9 @ $528.73), COHR (13 @ $334.23), GFS (52 @ $67.53), KEYS (14 @ $352.15), MRVL (26 @ $168.58), NVDA (23 @ $216.58), TSM (13 @ $403.52), VECO (80 @ $49.75)
+- Total Value: $106,534.18
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-15
-| Time | Symbol | Action | Qty | Limit | Status | Reasoning |
-|------|--------|--------|-----|-------|--------|-----------|
-| 14:12 | KEYS | BUY | 14 | $352.17 | pending | Baird Outperform upgrade PT $375 (6.7% upside), analyst catalyst, AI test equipment infrastructure |
-| 14:12 | ANET | BUY | 10 | $144.62 | pending | Add to existing position; bullish MA (164 vs 144), infrastructure thesis intact, room within 5% cap |
 
 ### 2026-05-18
 | Time (ET) | Symbol | Action | Qty | Limit | Status | Reasoning |
@@ -56,13 +52,18 @@ _not recorded_
 | 14:01 | AVGO | BUY | 2 | $416.51 | Meta/Broadcom/UCLA AI chip hub partnership validates infrastructure capex thesis; scaling high-conviction position |
 | 14:02 | TSM | BUY | 1 | $409.37 | AMD $10B Taiwan 2nm Venice investment confirms manufacturing boom; scaling high-conviction position |
 
-## Recent Reflections (last 3 days)
+### 2026-05-26
+| Time | Symbol | Action | Qty | Limit | Status | Reasoning |
+|------|--------|--------|-----|-------|--------|-----------|
+| 15:05 | MTSI | BUY | 5 | $376.32 | pending_new | Barclays Overweight upgrade (PT $450 = 20%+ upside), strong bullish MA momentum; high-conviction new entry within 3% allocation cap |
 
-### 2026-05-21
-Portfolio surged $2,038.56 (+1.99%) from 2026-05-20 close, with broad-based strength across semiconductor and infrastructure plays. ALAB led gains at +3.66% intraday, CIEN +5.74%, COHR +5.86%, and GFS +16.58%, while NVDA and KEYS both modestly negative (-1.69%, -1.32%). Position rebalancing today (reduced GFS and MRVL winners, added NVDA on dip) suggests tactical profit-taking from strong performers while maintaining core convictions. Portfolio remains well-within concentration limits; largest position (ALAB) at 4.28% of total value. Watch whether intraday strength persists into next session or consolidates as profit-taking momentum exhausts.
+## Recent Reflections (last 3 days)
 
 ### 2026-05-22
 Portfolio at 12 positions with strong performers (ALAB +52.7% unrealized, MRVL +16.5%, GFS +26.5%) offsetting mild underperformers (NVDA -0.73%, AVGO -1.86%). Cash position at $47.4k (45% of portfolio) reflects two scaling buys executed intraday (AVGO +2 @ $416.51, TSM +1 @ $409.37 — see Trades Executed above). Both adds were high-conviction news-catalyst plays on the Meta/Broadcom/UCLA partnership and AMD's 2nm Venice investment. No 8% stop-loss triggers; holding remaining positions and monitoring for next session's research signals.
 
 ### 2026-05-25
 Weekend session: markets closed, no activity. Portfolio held steady at 11 positions with net unrealized gains across most holdings. AVGO and KEYS remain slightly underwater (-1.6% each), but well above the 8% mandatory-close threshold. Watch for Monday research window to identify any catalysts or technical setups for the week ahead.
+
+### 2026-05-26
+All three research-flagged names delivered today: CIEN +3.2% on Biznet contract validation, MRVL +7.5% after Morgan Stanley PT raise, MTSI pending execution on Barclays Overweight (+5 shares at $376.32 limit). The AI infrastructure capex thesis is holding tight—analyst catalysts and concrete contract deployments are moving the thesis forward together. ALAB's 59% unrealized gain across the portfolio reflects strong conviction in the data-center/quantum segment. NVDA slight weakness (-0.39%) is noise within a broader infrastructure rally. The pending MTSI order captures analyst-driven upside before the narrative gets crowded; execution quality remains solid across all positions. Tomorrow: monitor MTSI fill status and watch for earnings calendars across the infrastructure holdings.
