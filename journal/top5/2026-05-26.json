@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-26",
+  "picks": [
+    {
+      "symbol": "CIEN",
+      "thesis": "Digital infrastructure expansion (Biznet 400G) validates optical transport thesis; bullish MA intact",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Ciena Biznet 400G infrastructure contract (2026-05-26)"
+    },
+    {
+      "symbol": "MTSI",
+      "thesis": "Analyst upgrade (Barclays Overweight) reflects AI infrastructure capex momentum; PT $450 implies 20%+ upside",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Barclays Overweight upgrade, PT $450 (2026-05-22)"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "Semiconductor analyst validates infrastructure strength; PT raise to $172 confirms thesis intact",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Morgan Stanley PT raise to $172 (2026-05-26)"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "Quantum/AI infrastructure momentum continues; positioned for data center capex cycle expansion",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Quantum/AI infrastructure sector strength (2026-05-24)"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "Manufacturing PMI at 48-month high driven by AI capex reshoring (not tariffs); validates infrastructure thesis",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Manufacturing boom narrative, AI-driven (2026-05-21)"
+    }
+  ]
+}
