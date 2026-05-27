@@ -1,19 +1,14 @@
 # Journal Summary
 
-_Generated 2026-05-26 20:55 from 7 of 18 entries (2026-05-18 → 2026-05-26)_
+_Generated 2026-05-27 20:57 from 7 of 19 entries (2026-05-19 → 2026-05-27)_
 
-## Latest Portfolio Status _(from 2026-05-26)_
+## Latest Portfolio Status _(from 2026-05-27)_
 
 - Cash: $47,400.83
-- Positions: AAOI (15 @ $162.17), ALAB (15 @ $200), ANET (35 @ $141.56), AVGO (13 @ $420.84), CIEN (9 @ $528.73), COHR (13 @ $334.23), GFS (52 @ $67.53), KEYS (14 @ $352.15), MRVL (26 @ $168.58), NVDA (23 @ $216.58), TSM (13 @ $403.52), VECO (80 @ $49.75)
-- Total Value: $106,534.18
+- Positions: AAOI (15 @ $162.17, +13.7% unrealized), ALAB (15 @ $200, +58.0% unrealized), ANET (35 @ $141.56, +10.3% unrealized), AVGO (13 @ $420.84, -0.2% unrealized), CIEN (9 @ $528.73, +10.7% unrealized), COHR (13 @ $334.23, +12.6% unrealized), GFS (52 @ $67.53, +20.9% unrealized), KEYS (14 @ $352.15, -2.2% unrealized), MRVL (26 @ $168.58, +20.1% unrealized), NVDA (23 @ $216.58, -3.1% unrealized), TSM (13 @ $403.52, +3.9% unrealized), VECO (80 @ $49.75, +23.9% unrealized)
+- Total Value: $105,521.96
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-18
-| Time (ET) | Symbol | Action | Qty | Limit | Status | Reasoning |
-|-----------|--------|--------|-----|-------|--------|-----------|
-| 10:02 | CIEN | BUY | 9 | $535.67 | pending | TD Cowen upgrade PT $675, strong MA momentum, bullish thesis entry at pullback from MA |
 
 ### 2026-05-19
 | Time | Symbol | Action | Qty | Price | Status | Reasoning |
@@ -57,13 +52,32 @@ _Generated 2026-05-26 20:55 from 7 of 18 entries (2026-05-18 → 2026-05-26)_
 |------|--------|--------|-----|-------|--------|-----------|
 | 15:05 | MTSI | BUY | 5 | $376.32 | pending_new | Barclays Overweight upgrade (PT $450 = 20%+ upside), strong bullish MA momentum; high-conviction new entry within 3% allocation cap |
 
-## Recent Reflections (last 3 days)
+### 2026-05-27
+| Time (ET) | Symbol | Action | Qty | Price | Conviction | Reasoning |
+|-----------|--------|--------|-----|-------|------------|-----------|
+| 11:09 | CSCO | BUY | 40 | $119.36 | medium | BofA PT $135 on AI infrastructure pivot (+13% upside); bullish MA structure (96.26/86.73 with price $119.36); AI capex thesis aligns with NVIDIA Quantum-X CPO demand |
+| 11:09 | GLW | BUY | 27 | $189.20 | medium | Bullish MA inflection (176.97 20-day / 158.10 50-day) with support at former resistance; Stock of Day article validation; photonics supply chain beneficiary |
 
-### 2026-05-22
-Portfolio at 12 positions with strong performers (ALAB +52.7% unrealized, MRVL +16.5%, GFS +26.5%) offsetting mild underperformers (NVDA -0.73%, AVGO -1.86%). Cash position at $47.4k (45% of portfolio) reflects two scaling buys executed intraday (AVGO +2 @ $416.51, TSM +1 @ $409.37 — see Trades Executed above). Both adds were high-conviction news-catalyst plays on the Meta/Broadcom/UCLA partnership and AMD's 2nm Venice investment. No 8% stop-loss triggers; holding remaining positions and monitoring for next session's research signals.
+## Recent Reflections (last 3 days)
 
 ### 2026-05-25
 Weekend session: markets closed, no activity. Portfolio held steady at 11 positions with net unrealized gains across most holdings. AVGO and KEYS remain slightly underwater (-1.6% each), but well above the 8% mandatory-close threshold. Watch for Monday research window to identify any catalysts or technical setups for the week ahead.
 
 ### 2026-05-26
 All three research-flagged names delivered today: CIEN +3.2% on Biznet contract validation, MRVL +7.5% after Morgan Stanley PT raise, MTSI pending execution on Barclays Overweight (+5 shares at $376.32 limit). The AI infrastructure capex thesis is holding tight—analyst catalysts and concrete contract deployments are moving the thesis forward together. ALAB's 59% unrealized gain across the portfolio reflects strong conviction in the data-center/quantum segment. NVDA slight weakness (-0.39%) is noise within a broader infrastructure rally. The pending MTSI order captures analyst-driven upside before the narrative gets crowded; execution quality remains solid across all positions. Tomorrow: monitor MTSI fill status and watch for earnings calendars across the infrastructure holdings.
+
+### 2026-05-27
+Initiated two analyst-driven entries to expand AI infrastructure exposure: CSCO (Cisco AI switch silicon platform, BofA PT $135) and GLW (Corning fiber optics, technical support break). Both orders filled at or below limit within first hour of trading—strong intraday demand reinforces thesis. CSCO now represents 4.59% allocation; GLW 4.88% allocation—both within watchlist max (5%) with room for appreciation.
+
+**Top 5 Picks Status:**
+- MRVL: HOLD. Earnings happening after close today. Already +20% unrealized from entry, now $198.18. Position is 4.92% allocation (near max). Thesis = earnings surprise upside; conviction high but event-driven. Plan to assess earnings outcome after-hours and hold for guidance updates.
+- TSM: HOLD. Nvidia Taiwan capex news validates thesis. +3.9% unrealized. 5.18% allocation (at max). Cannot add without trimming.
+- CIEN: HOLD. BofA upgrade validates thesis. +10.7% unrealized. 5.00% allocation (at max). Cannot add.
+- CSCO: BUY executed ✓. Filled 40 shares @ $119.36 ($4,773 position, 4.59% allocation).
+- GLW: BUY executed ✓. Filled 27 shares @ $189.20 ($5,105.70 position, 4.88% allocation).
+
+**Risk Check:**
+No mandatory closes: all holdings >-8% from entry. KEYS (-2.2%) and NVDA (-3.3%) intraday weakness but no thesis breaks. GFS and VECO showing strong intraday momentum despite broader tech volatility.
+
+**Next Actions:**
+Monitor MRVL earnings after close (expected ~4:05 PM ET). If earnings beat with strong guidance, thesis validated and position may run higher; if miss, assess conviction impact. Watching CSCO and GLW for intraday momentum confirmation before EOD.
