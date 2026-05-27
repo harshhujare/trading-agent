@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-27",
+  "picks": [
+    {
+      "symbol": "MRVL",
+      "thesis": "Earnings catalyst TODAY after market close; bullish MA (165.64/129.77)",
+      "conviction": "high",
+      "thesis_type": "earnings",
+      "signal_source": "MRVL earnings 2026-05-27 after bell"
+    },
+    {
+      "symbol": "TSM",
+      "thesis": "Nvidia announces $150B/year Taiwan investment; bullish-ish MA (399.3/368.73 with price 396.03)",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Nvidia Taiwan capex article 2026-05-27"
+    },
+    {
+      "symbol": "CIEN",
+      "thesis": "BofA Securities Buy PT raise to $660; mixed MA suggests pullback-entry area",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "BofA Buy PT $660 raise 2026-05-26"
+    },
+    {
+      "symbol": "CSCO",
+      "thesis": "BofA Buy PT $135 on AI infrastructure pivot; bullish MA (96.26/86.73) well above price. Prior limit order ($99.51) expired; thesis still valid at new price level.",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "BofA Buy on AI infrastructure 2026-05-26"
+    },
+    {
+      "symbol": "GLW",
+      "thesis": "Bullish MA (176.97/158.1) with support at former resistance; Stock of Day article signals entry",
+      "conviction": "medium",
+      "thesis_type": "news+ma",
+      "signal_source": "Stock of Day article + support signal 2026-05-19"
+    }
+  ]
+}
