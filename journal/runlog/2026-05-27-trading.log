@@ -1,0 +1,17 @@
+2026-05-27T15:05:23Z [INFO] [setup/start] setup starting routine=trading et_date=2026-05-27
+2026-05-27T15:05:23Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=false
+2026-05-27T15:05:23Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-27-trading.log marker=journal/.current-routine
+2026-05-27T15:05:59Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-28T09:30:00-04:00 next_close=2026-05-27T16:00:00-04:00
+2026-05-27T15:06:00Z [INFO] [research/account] fetched account http_status=200 cash=47400.83 portfolio_value=105030.08
+2026-05-27T15:06:01Z [INFO] [research/positions] fetched positions http_status=200 n_positions=12
+2026-05-27T15:06:48Z [INFO] [research/account] fetched account http_status=200 cash=47400.83 portfolio_value=105042.17
+2026-05-27T15:06:49Z [INFO] [research/account] fetched account http_status=200 cash=47400.83 portfolio_value=105046.95
+2026-05-27T15:09:02Z [INFO] [trade/order_request] received order request symbol=CSCO qty=40 side=buy limit_price=119.61 thesis_type=news_catalyst conviction=medium
+2026-05-27T15:09:02Z [INFO] [trade/validate] passed symbol=CSCO qty=40.0 side=buy allocation_pct=4.55
+2026-05-27T15:09:02Z [INFO] [trade/order_submit] alpaca response symbol=CSCO side=buy qty=40 limit_price=119.61 http_status=200 order_id=2308f115-e8da-45bf-b790-68b3f6bc027a order_status=pending_new
+2026-05-27T15:09:05Z [INFO] [trade/order_request] received order request symbol=GLW qty=27 side=buy limit_price=189.57 thesis_type=news+ma conviction=medium
+2026-05-27T15:09:05Z [INFO] [trade/validate] passed symbol=GLW qty=27.0 side=buy allocation_pct=4.87
+2026-05-27T15:09:06Z [INFO] [trade/order_submit] alpaca response symbol=GLW side=buy qty=27 limit_price=189.57 http_status=200 order_id=ed02d333-6802-4744-a3a2-045794369586 order_status=pending_new
+2026-05-27T15:09:12Z [INFO] [research/positions] fetched positions http_status=200 n_positions=14
+2026-05-27T15:09:15Z [INFO] [research/positions] fetched positions http_status=200 n_positions=14
+2026-05-27T15:09:56Z [INFO] [finalize/start] finalizing routine=trading et_date=2026-05-27
