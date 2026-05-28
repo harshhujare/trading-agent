@@ -1,0 +1,18 @@
+2026-05-28T15:08:13Z [INFO] [setup/start] setup starting routine=trading et_date=2026-05-28
+2026-05-28T15:08:13Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=false
+2026-05-28T15:08:13Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-28-trading.log marker=journal/.current-routine
+2026-05-28T15:08:34Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-05-29T09:30:00-04:00 next_close=2026-05-28T16:00:00-04:00
+2026-05-28T15:08:35Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105430.26
+2026-05-28T15:08:35Z [INFO] [research/positions] fetched positions http_status=200 n_positions=14
+2026-05-28T15:08:55Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105416.06
+2026-05-28T15:08:59Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105416.54
+2026-05-28T15:08:59Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105417.06
+2026-05-28T15:09:00Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105418.91
+2026-05-28T15:09:00Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105420.84
+2026-05-28T15:09:00Z [INFO] [research/account] fetched account http_status=200 cash=37518.03 portfolio_value=105420.84
+2026-05-28T15:10:18Z [INFO] [trade/order_request] received order request symbol=ALAB qty=6 side=sell limit_price=347.19 thesis_type=allocation_management conviction=high
+2026-05-28T15:10:18Z [INFO] [trade/order_submit] alpaca response symbol=ALAB side=sell qty=6 limit_price=347.19 http_status=200 order_id=9c6ea1f2-6000-4078-bb5e-941157ba1386 order_status=pending_new
+2026-05-28T15:10:20Z [INFO] [trade/order_request] received order request symbol=MTSI qty=8 side=buy limit_price=356.59 thesis_type=news_catalyst conviction=high
+2026-05-28T15:10:21Z [INFO] [trade/validate] passed symbol=MTSI qty=8.0 side=buy allocation_pct=2.7
+2026-05-28T15:10:21Z [INFO] [trade/order_submit] alpaca response symbol=MTSI side=buy qty=8 limit_price=356.59 http_status=200 order_id=ea0a9a5b-43aa-4795-b3f1-e366fa5601e5 order_status=pending_new
+2026-05-28T15:11:08Z [INFO] [finalize/start] finalizing routine=trading et_date=2026-05-28
