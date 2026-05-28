@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-28",
+  "picks": [
+    {
+      "symbol": "AVGO",
+      "thesis": "Susquehanna analyst upgrade today + bullish MA + 16.5% PT upside to $490",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Susquehanna Positive (2026-05-28)"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "Wells Fargo PT raise to $240 (+42% upside) validates thesis despite post-earnings dip",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Wells Fargo Overweight (2026-05-28)"
+    },
+    {
+      "symbol": "MTSI",
+      "thesis": "Barclays Overweight with PT $450 + bullish MA + 26% upside from current",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Barclays Overweight (2026-05-22)"
+    },
+    {
+      "symbol": "AAOI",
+      "thesis": "Russell 2000 record rally driven by AI-linked small-caps + bullish MA + optical interconnect play",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Russell 2000 AI rally theme (2026-05-27)"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "BofA validates AI fundamentals not-bubble narrative + bullish MA + data-center capex thesis",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "BofA \"AI Bubble That Isn't\" (2026-05-26)"
+    }
+  ]
+}
