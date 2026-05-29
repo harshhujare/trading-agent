@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-05-29",
+  "picks": [
+    {
+      "symbol": "MRVL",
+      "thesis": "Barclays Overweight with PT $275 (+63% upside); bullish MA structure ($165.64 > $129.77); analyst tailwind validates core AI infrastructure thesis",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Barclays Overweight PT raise 2026-05-29"
+    },
+    {
+      "symbol": "AVGO",
+      "thesis": "Analysts double down on AI outlook with fresh target hikes; bullish MA ($419.53 > $371.19); scales existing institutional conviction",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Wall Street analyst wave 2026-05-29"
+    },
+    {
+      "symbol": "NVDA",
+      "thesis": "Cisco CEO commentary validates NVDA ecosystem centrality to AI capex strategy (2016 silicon acquisition now core); bullish MA ($211.31 > $193.96)",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Cisco CEO commentary 2026-05-29"
+    },
+    {
+      "symbol": "CSCO",
+      "thesis": "CEO Chuck Robbins: 'biggest AI bet made in 2016' — validates infrastructure positioning thesis; strong MA breakout ($118.94 > $96.26 MA20 > $86.73 MA50)",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Cisco CEO 2026-05-29"
+    },
+    {
+      "symbol": "TSM",
+      "thesis": "Targets 30% power reduction by 2028 for AI energy crisis; bullish MA structure ($399.3 > $368.73); NVIDIA Vera Rubin ramp drives manufacturing demand",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "TSM power-efficiency roadmap 2026-05-29"
+    }
+  ]
+}
