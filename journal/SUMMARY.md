@@ -1,32 +1,14 @@
 # Journal Summary
 
-_Generated 2026-05-28 21:01 from 7 of 20 entries (2026-05-20 → 2026-05-28)_
+_Generated 2026-05-29 21:03 from 7 of 21 entries (2026-05-21 → 2026-05-29)_
 
-## Latest Portfolio Status _(from 2026-05-28)_
+## Latest Portfolio Status _(from 2026-05-29)_
 
-- Cash: $37,518.03
-- Positions (14 open): AAOI (15 @ $162.17, +6.1% unrealized), ALAB (15 @ $200, +71.8% unrealized), ANET (35 @ $141.56, +8.5% unrealized), AVGO (13 @ $420.84, +0.3% unrealized), CIEN (9 @ $528.73, +6.9% unrealized), COHR (13 @ $334.23, +12.9% unrealized), CSCO (40 @ $119.36, +0.008% unrealized), GFS (52 @ $67.53, +18.8% unrealized), GLW (27 @ $189.20, -0.3% unrealized), KEYS (14 @ $352.15, -3.4% unrealized), MRVL (26 @ $168.58, +16.5% unrealized), NVDA (23 @ $216.58, -2.0% unrealized), TSM (13 @ $403.52, +4.6% unrealized), VECO (80 @ $49.75, +19.8% unrealized)
-- Total Value: $105,143.54
+- Cash: $39,605.90
+- Positions (14 open): AAOI (15 @ $162.17, -3.5%), ALAB (9 @ $200, +65.4%), ANET (35 @ $141.56, +10.6%), AVGO (13 @ $420.84, +3.5%), CIEN (9 @ $528.73, +3.3%), COHR (13 @ $334.23, +5.3%), CSCO (40 @ $119.36, -0.4%), GFS (52 @ $67.53, +17.9%), GLW (27 @ $189.20, -7.3%), KEYS (14 @ $352.15, -6.2%), MRVL (26 @ $168.58, +19.4%), NVDA (23 @ $216.58, -0.9%), TSM (13 @ $403.52, +4.1%), VECO (80 @ $49.75, +13.3%)
+- Total Value: $103,955.39
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-20
-| Time | Symbol | Action | Qty | Limit | Status | Reasoning |
-|------|--------|--------|-----|-------|--------|-----------|
-| 10:02 | CSCO | BUY | 25 | $99.51 | pending | Rosenblatt 30% upside PT $150 on AI infrastructure pivot (high conviction news catalyst). Entry sized at 2.44% of portfolio; thesis aligned with sector strength. |
-
-**Execution Notes:**
-- CSCO Order ID: 123f5bf1-c2b5-4807-9527-444e4f961eae
-- Limit price $99.51 = 0.2% above last bar close of $99.31 (standard 0.2% above-ask buy rule from CLAUDE.md)
-- Status: pending_new, expires EOD 2026-05-20 16:00 ET
-- Cash impact if filled: -$2,487.75 (25 × $99.51)
-- Resulting allocation: $2,487.75 / $102,072.71 = 2.44% (well within 5% single-position limit and 20% cash reserve)
-
-**Rationale for OTHER top-5 picks:**
-- **MRVL**: Held at 5.38% allocation (slightly over watchlist 5% cap) — HOLD, no room to add
-- **KEYS**: Held at 4.74% allocation, Wells Fargo PT $390 valid but room for only ~1 share additional; thesis already reflected in 20/50 day MA — HOLD
-- **COHR**: Held at 4.56% allocation, NVIDIA institutional backing thesis already +8.1% in price — HOLD (momentum already captured)
-- **CIEN**: Held at 4.91% allocation (near 5% cap), Citigroup Buy thesis already +4.8% in price — HOLD
 
 ### 2026-05-21
 | Time (ET) | Symbol | Action | Qty | Limit | Reasoning |
@@ -58,10 +40,22 @@ _Generated 2026-05-28 21:01 from 7 of 20 entries (2026-05-20 → 2026-05-28)_
 | 11:10 | ALAB | SELL | 6 | $347.19 | pending_new | Trim allocation from 4.95% to 2.97% (3% watchlist max). Position appreciated 74% from $200 entry; trim maintains thesis while ensuring compliance with max_allocation_pct. Frees ~$2,083 cash. |
 | 11:10 | MTSI | BUY | 8 | $356.59 | pending_new | Barclays Overweight PT $450 (+26% upside), bullish MA ($355.88 < $317.54 20-day MA wait no: price $355.88 > MA20 $317.54 > MA50 $269.01), high-conviction news catalyst. Entry position 2.70% allocation within 3% cap. |
 
-## Recent Reflections (last 3 days)
+### 2026-05-29
+| Time (ET) | Symbol | Action | Qty | Limit | Status | Order ID | Reasoning |
+|-----------|--------|--------|-----|-------|--------|----------|-----------|
+| 15:07 | VECO | SELL | 7 | 56.73 | pending_new | dc0a8e9a | Trim from 4.36% to 3.98% (watchlist max 4%) |
+| 15:07 | AVGO | SELL | 2 | 439.76 | pending_new | f0c7dd80 | Trim from 5.49% to 4.65% (watchlist max 5%) |
+| 15:07 | MRVL | SELL | 1 | 202.12 | pending_new | 3220e1a4 | Trim from 5.05% to 4.85% (watchlist max 5%) |
+| 15:07 | TSM | SELL | 1 | 419.51 | pending_new | 716acde6 | Trim from 5.24% to 4.84% (watchlist max 5%) |
+| 15:07 | NVDA | BUY | 1 | 215.66 | pending_new | a6c228c5 | Fresh CEO ecosystem validation catalyst; room to scale |
+| 15:07 | CSCO | BUY | 4 | 118.91 | pending_new | f34979a8 | CEO infrastructure thesis endorsement; MA breakout |
 
-### 2026-05-26
-All three research-flagged names delivered today: CIEN +3.2% on Biznet contract validation, MRVL +7.5% after Morgan Stanley PT raise, MTSI pending execution on Barclays Overweight (+5 shares at $376.32 limit). The AI infrastructure capex thesis is holding tight—analyst catalysts and concrete contract deployments are moving the thesis forward together. ALAB's 59% unrealized gain across the portfolio reflects strong conviction in the data-center/quantum segment. NVDA slight weakness (-0.39%) is noise within a broader infrastructure rally. The pending MTSI order captures analyst-driven upside before the narrative gets crowded; execution quality remains solid across all positions. Tomorrow: monitor MTSI fill status and watch for earnings calendars across the infrastructure holdings.
+**Execution rationale:**
+- **Compliance trims (VECO, AVGO, MRVL, TSM)**: Four positions exceeded watchlist max_allocation_pct. Trims free ~$1.9K cash while preserving long-duration theses already in the money.
+- **NVDA BUY (1 share)**: Cisco CEO commentary ("biggest AI bet made in 2016") directly validates NVDA ecosystem centrality thesis. Allocation room to 5% cap; bullish 20/50 MA structure intact.
+- **CSCO BUY (4 shares)**: Same CEO commentary validates Cisco's infrastructure positioning (Acacia silicon acquisition). Strong MA breakout ($118.94 > $96.26 > $86.73); room to 5% cap. This fills out the infrastructure thesis layer.
+
+## Recent Reflections (last 3 days)
 
 ### 2026-05-27
 Initiated two analyst-driven entries to expand AI infrastructure exposure: CSCO (Cisco AI switch silicon platform, BofA PT $135) and GLW (Corning fiber optics, technical support break). Both orders filled at or below limit within first hour of trading—strong intraday demand reinforces thesis. CSCO now represents 4.59% allocation; GLW 4.88% allocation—both within watchlist max (5%) with room for appreciation.
@@ -81,3 +75,17 @@ Monitor MRVL earnings after close (expected ~4:05 PM ET). If earnings beat with 
 
 ### 2026-05-28
 ALAB trim executed flawlessly (+$2,088 cash freed), restoring compliance while keeping 73%+ gains intact. Analyst tailwinds on AVGO (Susquehanna +16% PT) and MRVL (Wells Fargo +42% PT from current) validate core AI infrastructure thesis—both positions now anchored by fresh institutional conviction. MTSI entry limit ($356.59) didn't fill; price likely ran past on intraday strength; will reassess at open if conviction holds. Portfolio +0.3% on the day despite mid-cap volatility. Thesis integrity strong across positions.
+
+### 2026-05-29
+**Decision Framework Applied:**
+1. **Cash balance**: $39.6K (31% reserve) ✓
+2. **Open positions**: 14 healthy; no positions at -8% mandatory close threshold
+3. **Top 5 thesis alignment**: All five picks reflect the AI infrastructure capex cycle—analyst momentum (MRVL, AVGO), ecosystem validation (NVDA), infrastructure positioning (CSCO), manufacturing ramp (TSM)
+4. **MA health**: CSCO showing strongest breakout; NVDA, MRVL, AVGO, TSM all bullish 20/50 structure
+5. **Risk**: Compliance trims pare down concentration; NVDA/CSCO buys into institutional validation
+
+**Key observations**: The morning research flagged the Cisco CEO commentary as a multiplier effect—it validates NVDA's centrality AND Cisco's own infrastructure bet. This is a rare moment where the same news catalyst justifies adds in two complementary positions. MRVL and AVGO theses are already captured in price (analyst tailwinds reflected); trimming to max allocation frees capital for the fresh catalyst plays.
+
+**Watchpoints**: KEYS (-6.15%) and GLW (-6.97%) approaching the -8% mandatory close threshold; monitor over next 2 trading days. ALAB remains the highest conviction winner (+70% unrealized on $200 entry); thesis remains intact but position cap prevents further scaling. Thesis integrity remains strong across the portfolio.
+
+**Execution Update**: All six orders filled successfully (4 sells trimming overweight positions, 2 buys adding to fresh catalyst plays). Market moved favorably after our fills, with AVGO +4.5%, CSCO +1.8%, ANET +2.7% intraday; sell trims avoided being caught in upside regret. Portfolio now at $105.2K (+1.2% session-to-close), cash rebuilt to $40.8K. Ready for tomorrow's session.
