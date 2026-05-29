@@ -1,0 +1,21 @@
+2026-05-29T15:05:46Z [INFO] [setup/start] setup starting routine=trading et_date=2026-05-29
+2026-05-29T15:05:47Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=false
+2026-05-29T15:05:47Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-05-29-trading.log marker=journal/.current-routine
+2026-05-29T15:06:09Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-06-01T09:30:00-04:00 next_close=2026-05-29T16:00:00-04:00
+2026-05-29T15:06:12Z [INFO] [research/account] fetched account http_status=200 cash=39605.9 portfolio_value=104355.91
+2026-05-29T15:06:12Z [INFO] [research/positions] fetched positions http_status=200 n_positions=14
+2026-05-29T15:07:08Z [INFO] [trade/order_request] received order request symbol=VECO qty=7 side=sell limit_price=56.73 thesis_type=compliance conviction=medium
+2026-05-29T15:07:08Z [INFO] [trade/order_submit] alpaca response symbol=VECO side=sell qty=7 limit_price=56.73 http_status=200 order_id=dc0a8e9a-b5b9-4e9c-99a6-9948c7835aed order_status=pending_new
+2026-05-29T15:07:10Z [INFO] [trade/order_request] received order request symbol=AVGO qty=2 side=sell limit_price=439.76 thesis_type=compliance conviction=medium
+2026-05-29T15:07:10Z [INFO] [trade/order_submit] alpaca response symbol=AVGO side=sell qty=2 limit_price=439.76 http_status=200 order_id=f0c7dd80-a5e1-4ce1-b1b5-94b590c67ec3 order_status=pending_new
+2026-05-29T15:07:14Z [INFO] [trade/order_request] received order request symbol=MRVL qty=1 side=sell limit_price=202.12 thesis_type=compliance conviction=medium
+2026-05-29T15:07:14Z [INFO] [trade/order_submit] alpaca response symbol=MRVL side=sell qty=1 limit_price=202.12 http_status=200 order_id=3220e1a4-1d09-4ac1-b7f1-70a6828e0208 order_status=pending_new
+2026-05-29T15:07:16Z [INFO] [trade/order_request] received order request symbol=TSM qty=1 side=sell limit_price=419.51 thesis_type=compliance conviction=medium
+2026-05-29T15:07:16Z [INFO] [trade/order_submit] alpaca response symbol=TSM side=sell qty=1 limit_price=419.51 http_status=200 order_id=716acde6-1603-4b47-9986-1360b7b03043 order_status=pending_new
+2026-05-29T15:07:21Z [INFO] [trade/order_request] received order request symbol=NVDA qty=1 side=buy limit_price=215.66 thesis_type=news_catalyst conviction=high
+2026-05-29T15:07:21Z [INFO] [trade/validate] passed symbol=NVDA qty=1.0 side=buy allocation_pct=0.21
+2026-05-29T15:07:21Z [INFO] [trade/order_submit] alpaca response symbol=NVDA side=buy qty=1 limit_price=215.66 http_status=200 order_id=a6c228c5-9300-438e-bfe3-e4819865bee3 order_status=pending_new
+2026-05-29T15:07:23Z [INFO] [trade/order_request] received order request symbol=CSCO qty=4 side=buy limit_price=118.91 thesis_type=news_catalyst conviction=high
+2026-05-29T15:07:23Z [INFO] [trade/validate] passed symbol=CSCO qty=4.0 side=buy allocation_pct=0.46
+2026-05-29T15:07:23Z [INFO] [trade/order_submit] alpaca response symbol=CSCO side=buy qty=4 limit_price=118.91 http_status=200 order_id=f34979a8-2227-4da3-bd6f-724fb2aa2699 order_status=pending_new
+2026-05-29T15:08:11Z [INFO] [finalize/start] finalizing routine=trading et_date=2026-05-29
