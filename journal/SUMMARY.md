@@ -1,21 +1,14 @@
 # Journal Summary
 
-_Generated 2026-05-29 21:03 from 7 of 21 entries (2026-05-21 → 2026-05-29)_
+_Generated 2026-06-01 21:26 from 7 of 22 entries (2026-05-22 → 2026-06-01)_
 
-## Latest Portfolio Status _(from 2026-05-29)_
+## Latest Portfolio Status _(from 2026-06-01)_
 
-- Cash: $39,605.90
-- Positions (14 open): AAOI (15 @ $162.17, -3.5%), ALAB (9 @ $200, +65.4%), ANET (35 @ $141.56, +10.6%), AVGO (13 @ $420.84, +3.5%), CIEN (9 @ $528.73, +3.3%), COHR (13 @ $334.23, +5.3%), CSCO (40 @ $119.36, -0.4%), GFS (52 @ $67.53, +17.9%), GLW (27 @ $189.20, -7.3%), KEYS (14 @ $352.15, -6.2%), MRVL (26 @ $168.58, +19.4%), NVDA (23 @ $216.58, -0.9%), TSM (13 @ $403.52, +4.1%), VECO (80 @ $49.75, +13.3%)
-- Total Value: $103,955.39
+- Cash: $40,817.31
+- Positions (14 open): AAOI (15 @ $162.17, +13.9%), ALAB (9 @ $200, +63.3%), ANET (35 @ $141.56, +19.5%), AVGO (11 @ $420.67, +9.1%), CIEN (9 @ $528.73, +7.1%), COHR (13 @ $334.23, +7.1%), CSCO (44 @ $119.30, +1.2%), GFS (52 @ $67.53, +19.3%), GLW (27 @ $189.20, -6.6%), KEYS (14 @ $352.15, -6.0%), MRVL (25 @ $168.58, +29.1%), NVDA (24 @ $216.53, +1.7%), TSM (12 @ $403.55, +9.4%), VECO (80 @ $49.75, +16.2%)
+- Total Value: $106,396.83
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-21
-| Time (ET) | Symbol | Action | Qty | Limit | Reasoning |
-|-----------|--------|--------|-----|-------|-----------|
-| 14:01 | GFS | SELL | 6 | $78.88 | Trim from 4.41% to 3.95% — watchlist max 4% |
-| 14:01 | MRVL | SELL | 3 | $193.19 | Trim from 5.40% to 4.85% — watchlist max 5% |
-| 14:01 | NVDA | BUY | 3 | $222.66 | Goldman Sachs PT raise on earnings beat (high conviction, news catalyst) |
 
 ### 2026-05-22
 | Time | Symbol | Action | Qty | Limit | Reasoning |
@@ -55,23 +48,14 @@ _Generated 2026-05-29 21:03 from 7 of 21 entries (2026-05-21 → 2026-05-29)_
 - **NVDA BUY (1 share)**: Cisco CEO commentary ("biggest AI bet made in 2016") directly validates NVDA ecosystem centrality thesis. Allocation room to 5% cap; bullish 20/50 MA structure intact.
 - **CSCO BUY (4 shares)**: Same CEO commentary validates Cisco's infrastructure positioning (Acacia silicon acquisition). Strong MA breakout ($118.94 > $96.26 > $86.73); room to 5% cap. This fills out the infrastructure thesis layer.
 
+### 2026-06-01
+| Time | Symbol | Action | Qty | Limit | Status | Reasoning |
+|------|--------|--------|-----|-------|--------|-----------|
+| 12:04 | MRVL | SELL | 1 | $214.40 | pending_new | T100 launch thesis intact, trim from 5.11% to 4.99% (watchlist max 5%) |
+| 12:04 | CSCO | SELL | 1 | $120.44 | pending_new | CEO infrastructure thesis intact, trim from 5.01% to 4.97% (watchlist max 5%) |
+| 12:05 | CIEN | SELL | 2 | $562.18 | pending_new | BofA upgrade thesis intact, trim from 4.77% to 3.71% (watchlist max 4%) |
+
 ## Recent Reflections (last 3 days)
-
-### 2026-05-27
-Initiated two analyst-driven entries to expand AI infrastructure exposure: CSCO (Cisco AI switch silicon platform, BofA PT $135) and GLW (Corning fiber optics, technical support break). Both orders filled at or below limit within first hour of trading—strong intraday demand reinforces thesis. CSCO now represents 4.59% allocation; GLW 4.88% allocation—both within watchlist max (5%) with room for appreciation.
-
-**Top 5 Picks Status:**
-- MRVL: HOLD. Earnings happening after close today. Already +20% unrealized from entry, now $198.18. Position is 4.92% allocation (near max). Thesis = earnings surprise upside; conviction high but event-driven. Plan to assess earnings outcome after-hours and hold for guidance updates.
-- TSM: HOLD. Nvidia Taiwan capex news validates thesis. +3.9% unrealized. 5.18% allocation (at max). Cannot add without trimming.
-- CIEN: HOLD. BofA upgrade validates thesis. +10.7% unrealized. 5.00% allocation (at max). Cannot add.
-- CSCO: BUY executed ✓. Filled 40 shares @ $119.36 ($4,773 position, 4.59% allocation).
-- GLW: BUY executed ✓. Filled 27 shares @ $189.20 ($5,105.70 position, 4.88% allocation).
-
-**Risk Check:**
-No mandatory closes: all holdings >-8% from entry. KEYS (-2.2%) and NVDA (-3.3%) intraday weakness but no thesis breaks. GFS and VECO showing strong intraday momentum despite broader tech volatility.
-
-**Next Actions:**
-Monitor MRVL earnings after close (expected ~4:05 PM ET). If earnings beat with strong guidance, thesis validated and position may run higher; if miss, assess conviction impact. Watching CSCO and GLW for intraday momentum confirmation before EOD.
 
 ### 2026-05-28
 ALAB trim executed flawlessly (+$2,088 cash freed), restoring compliance while keeping 73%+ gains intact. Analyst tailwinds on AVGO (Susquehanna +16% PT) and MRVL (Wells Fargo +42% PT from current) validate core AI infrastructure thesis—both positions now anchored by fresh institutional conviction. MTSI entry limit ($356.59) didn't fill; price likely ran past on intraday strength; will reassess at open if conviction holds. Portfolio +0.3% on the day despite mid-cap volatility. Thesis integrity strong across positions.
@@ -89,3 +73,6 @@ ALAB trim executed flawlessly (+$2,088 cash freed), restoring compliance while k
 **Watchpoints**: KEYS (-6.15%) and GLW (-6.97%) approaching the -8% mandatory close threshold; monitor over next 2 trading days. ALAB remains the highest conviction winner (+70% unrealized on $200 entry); thesis remains intact but position cap prevents further scaling. Thesis integrity remains strong across the portfolio.
 
 **Execution Update**: All six orders filled successfully (4 sells trimming overweight positions, 2 buys adding to fresh catalyst plays). Market moved favorably after our fills, with AVGO +4.5%, CSCO +1.8%, ANET +2.7% intraday; sell trims avoided being caught in upside regret. Portfolio now at $105.2K (+1.2% session-to-close), cash rebuilt to $40.8K. Ready for tomorrow's session.
+
+### 2026-06-01
+All three trim orders filled by close: MRVL 1 @ avg $217.5 (+3.08), CSCO 1 @ avg $121.68 (+1.24), CIEN 2 @ avg $568.5 (total ~$1,137). Portfolio closed at $106,688.01 with cash at $42,278.07, positioning stable across 14 holdings with strong upside momentum (AAOI +17%, ANET +7.3%, MRVL +7.3%, NVDA +6.2%). Allocation compliance restored. GLW at -6.3%, KEYS at -6.3% — both monitoring for 8% threshold. All catalyst narratives intact (MRVL T100, NVDA Computex, CSCO infra, CIEN BofA). Ready for next session with cash buffer at 39.6% of portfolio.
