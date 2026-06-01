@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-06-01",
+  "picks": [
+    {
+      "symbol": "MRVL",
+      "thesis": "Teralynx T100 launch validates high-bandwidth AI infrastructure expansion",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Product launch June 1"
+    },
+    {
+      "symbol": "NVDA",
+      "thesis": "CEO ecosystem validation at Computex amplifies centrality thesis",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Computex/CEO Huang June 1"
+    },
+    {
+      "symbol": "CSCO",
+      "thesis": "CEO confirms infrastructure positioning from 2016 AI bet vindication",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "CEO commentary May 29"
+    },
+    {
+      "symbol": "CIEN",
+      "thesis": "BofA analyst upgrade to PT $660 validates optical networking thesis",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "BofA upgrade May 26"
+    },
+    {
+      "symbol": "COHR",
+      "thesis": "Coherent poised to benefit from AI capex wave in photonics/optics supply chain",
+      "conviction": "medium",
+      "thesis_type": "ma_crossover",
+      "signal_source": "Bullish MA + market momentum"
+    }
+  ]
+}
