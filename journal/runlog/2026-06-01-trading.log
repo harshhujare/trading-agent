@@ -1,0 +1,13 @@
+2026-06-01T16:03:13Z [INFO] [setup/start] setup starting routine=trading et_date=2026-06-01
+2026-06-01T16:03:13Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=false
+2026-06-01T16:03:13Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-06-01-trading.log marker=journal/.current-routine
+2026-06-01T16:03:44Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-06-02T09:30:00-04:00 next_close=2026-06-01T16:00:00-04:00
+2026-06-01T16:03:45Z [INFO] [research/account] fetched account http_status=200 cash=40817.31 portfolio_value=106044.1
+2026-06-01T16:03:45Z [INFO] [research/positions] fetched positions http_status=200 n_positions=14
+2026-06-01T16:04:46Z [INFO] [trade/order_request] received order request symbol=MRVL qty=1 side=sell limit_price=214.40 thesis_type=news_catalyst conviction=high
+2026-06-01T16:04:46Z [INFO] [trade/order_submit] alpaca response symbol=MRVL side=sell qty=1 limit_price=214.40 http_status=200 order_id=c36d531b-3c76-4c0c-8f5a-00cc3e9bde2b order_status=pending_new
+2026-06-01T16:04:48Z [INFO] [trade/order_request] received order request symbol=CSCO qty=1 side=sell limit_price=120.44 thesis_type=news_catalyst conviction=high
+2026-06-01T16:04:48Z [INFO] [trade/order_submit] alpaca response symbol=CSCO side=sell qty=1 limit_price=120.44 http_status=200 order_id=99d0e73d-05ed-4b7b-be0f-265140c90f34 order_status=pending_new
+2026-06-01T16:05:00Z [INFO] [trade/order_request] received order request symbol=CIEN qty=2 side=sell limit_price=562.18 thesis_type=news_catalyst conviction=high
+2026-06-01T16:05:00Z [INFO] [trade/order_submit] alpaca response symbol=CIEN side=sell qty=2 limit_price=562.18 http_status=200 order_id=70fd41dd-f4b7-403b-b5d8-11e5bca0cb21 order_status=pending_new
+2026-06-01T16:05:50Z [INFO] [finalize/start] finalizing routine=trading et_date=2026-06-01
