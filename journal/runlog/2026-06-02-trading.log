@@ -1,0 +1,17 @@
+2026-06-02T15:24:21Z [INFO] [setup/start] setup starting routine=trading et_date=2026-06-02
+2026-06-02T15:24:22Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=false
+2026-06-02T15:24:22Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-06-02-trading.log marker=journal/.current-routine
+2026-06-02T15:24:50Z [INFO] [trade/market_status] fetched clock http_status=200 is_open=True next_open=2026-06-03T09:30:00-04:00 next_close=2026-06-02T16:00:00-04:00
+2026-06-02T15:24:50Z [INFO] [research/account] fetched account http_status=200 cash=42278.06 portfolio_value=111695.25
+2026-06-02T15:24:51Z [INFO] [research/positions] fetched positions http_status=200 n_positions=14
+2026-06-02T15:25:20Z [INFO] [research/account] fetched account http_status=200 cash=42278.06 portfolio_value=111690
+2026-06-02T15:25:27Z [INFO] [research/account] fetched account http_status=200 cash=42278.06 portfolio_value=111668.82
+2026-06-02T15:26:20Z [INFO] [trade/order_request] received order request symbol=MRVL qty=4 side=sell limit_price=279.90 thesis_type=news_catalyst conviction=high
+2026-06-02T15:26:20Z [INFO] [trade/order_submit] alpaca response symbol=MRVL side=sell qty=4 limit_price=279.90 http_status=200 order_id=f9f3b4b3-7ff0-4b17-b759-9b4c5c15a3f8 order_status=pending_new
+2026-06-02T15:26:23Z [INFO] [trade/order_request] received order request symbol=CRDO qty=15 side=buy limit_price=218.86 thesis_type=news_catalyst conviction=high
+2026-06-02T15:26:23Z [INFO] [trade/validate] passed symbol=CRDO qty=15.0 side=buy allocation_pct=2.94
+2026-06-02T15:26:23Z [INFO] [trade/order_submit] alpaca response symbol=CRDO side=buy qty=15 limit_price=218.86 http_status=200 order_id=f496882b-f218-4acb-b1fc-b84cb59ca89f order_status=pending_new
+2026-06-02T15:26:26Z [INFO] [trade/order_request] received order request symbol=LITE qty=5 side=buy limit_price=948.55 thesis_type=news_catalyst conviction=medium_high
+2026-06-02T15:26:26Z [INFO] [trade/validate] passed symbol=LITE qty=5.0 side=buy allocation_pct=4.25
+2026-06-02T15:26:27Z [INFO] [trade/order_submit] alpaca response symbol=LITE side=buy qty=5 limit_price=948.55 http_status=200 order_id=33645ba3-1a6e-4b4f-8be2-0029b504c670 order_status=pending_new
+2026-06-02T15:26:55Z [INFO] [finalize/start] finalizing routine=trading et_date=2026-06-02
