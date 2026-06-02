@@ -1,20 +1,14 @@
 # Journal Summary
 
-_Generated 2026-06-01 21:26 from 7 of 22 entries (2026-05-22 → 2026-06-01)_
+_Generated 2026-06-02 21:22 from 7 of 23 entries (2026-05-25 → 2026-06-02)_
 
-## Latest Portfolio Status _(from 2026-06-01)_
+## Latest Portfolio Status _(from 2026-06-02)_
 
-- Cash: $40,817.31
-- Positions (14 open): AAOI (15 @ $162.17, +13.9%), ALAB (9 @ $200, +63.3%), ANET (35 @ $141.56, +19.5%), AVGO (11 @ $420.67, +9.1%), CIEN (9 @ $528.73, +7.1%), COHR (13 @ $334.23, +7.1%), CSCO (44 @ $119.30, +1.2%), GFS (52 @ $67.53, +19.3%), GLW (27 @ $189.20, -6.6%), KEYS (14 @ $352.15, -6.0%), MRVL (25 @ $168.58, +29.1%), NVDA (24 @ $216.53, +1.7%), TSM (12 @ $403.55, +9.4%), VECO (80 @ $49.75, +16.2%)
-- Total Value: $106,396.83
+- Cash: $42,278.06
+- Positions (14 open): AAOI (15 @ $162.17, +20.9%), ALAB (9 @ $200.00, +71.5%), ANET (35 @ $141.56, +24.5%), AVGO (11 @ $420.67, +13.2%), CIEN (7 @ $528.73, +15.3%), COHR (13 @ $334.23, +26.9%), CSCO (43 @ $119.30, +6.7%), GFS (52 @ $67.53, +25.6%), GLW (27 @ $189.20, +6.1%), KEYS (14 @ $352.15, -1.4%), MRVL (24 @ $168.58, +64.4%), NVDA (24 @ $216.53, +4.6%), TSM (12 @ $403.55, +10.1%), VECO (73 @ $49.75, +19.4%)
+- Total Value: $111,415.86
 
 ## Recent Trades (last 7 days)
-
-### 2026-05-22
-| Time | Symbol | Action | Qty | Limit | Reasoning |
-|------|--------|--------|-----|-------|-----------|
-| 14:01 | AVGO | BUY | 2 | $416.51 | Meta/Broadcom/UCLA AI chip hub partnership validates infrastructure capex thesis; scaling high-conviction position |
-| 14:02 | TSM | BUY | 1 | $409.37 | AMD $10B Taiwan 2nm Venice investment confirms manufacturing boom; scaling high-conviction position |
 
 ### 2026-05-26
 | Time | Symbol | Action | Qty | Limit | Status | Reasoning |
@@ -55,10 +49,14 @@ _Generated 2026-06-01 21:26 from 7 of 22 entries (2026-05-22 → 2026-06-01)_
 | 12:04 | CSCO | SELL | 1 | $120.44 | pending_new | CEO infrastructure thesis intact, trim from 5.01% to 4.97% (watchlist max 5%) |
 | 12:05 | CIEN | SELL | 2 | $562.18 | pending_new | BofA upgrade thesis intact, trim from 4.77% to 3.71% (watchlist max 4%) |
 
-## Recent Reflections (last 3 days)
+### 2026-06-02
+| Time | Symbol | Action | Qty | Price | Reasoning |
+|------|--------|--------|-----|-------|-----------|
+| 15:26 | MRVL | SELL | 4 | $279.90 | NVIDIA CEO T100 validation maintains thesis; trim from 6.03% to 5.02% for compliance with 5% watchlist cap |
+| 15:26 | CRDO | BUY | 15 | $218.86 | TD Cowen Overweight upgrade (+19% PT $260), bullish MA (185.2 > 149.85), fresh institutional catalyst |
+| 15:26 | LITE | BUY | 5 | $948.55 | Trading signal + bullish MA (933.82 > 846.81), photonics capex thesis validated, room within 5% allocation |
 
-### 2026-05-28
-ALAB trim executed flawlessly (+$2,088 cash freed), restoring compliance while keeping 73%+ gains intact. Analyst tailwinds on AVGO (Susquehanna +16% PT) and MRVL (Wells Fargo +42% PT from current) validate core AI infrastructure thesis—both positions now anchored by fresh institutional conviction. MTSI entry limit ($356.59) didn't fill; price likely ran past on intraday strength; will reassess at open if conviction holds. Portfolio +0.3% on the day despite mid-cap volatility. Thesis integrity strong across positions.
+## Recent Reflections (last 3 days)
 
 ### 2026-05-29
 **Decision Framework Applied:**
@@ -76,3 +74,6 @@ ALAB trim executed flawlessly (+$2,088 cash freed), restoring compliance while k
 
 ### 2026-06-01
 All three trim orders filled by close: MRVL 1 @ avg $217.5 (+3.08), CSCO 1 @ avg $121.68 (+1.24), CIEN 2 @ avg $568.5 (total ~$1,137). Portfolio closed at $106,688.01 with cash at $42,278.07, positioning stable across 14 holdings with strong upside momentum (AAOI +17%, ANET +7.3%, MRVL +7.3%, NVDA +6.2%). Allocation compliance restored. GLW at -6.3%, KEYS at -6.3% — both monitoring for 8% threshold. All catalyst narratives intact (MRVL T100, NVDA Computex, CSCO infra, CIEN BofA). Ready for next session with cash buffer at 39.6% of portfolio.
+
+### 2026-06-02
+MRVL's +44% intraday surge on NVIDIA CEO validation confirms AI infrastructure thesis; trim to 5% cap preserved compliance and freed dry powder. CRDO filled (+4.3% EOD) on analyst catalyst, validating thesis; LITE failed to fill at $948.55 despite bullish structure — thesis intact, gaps in momentum markets tested limit execution. Portfolio +$1.6k net despite cash deployment; no loss thresholds breached. Ready for next session: 15 positions solid, thesis structure validated, dry powder positioned for next catalyst entry.
