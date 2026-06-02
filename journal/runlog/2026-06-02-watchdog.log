@@ -1,0 +1,6 @@
+2026-06-02T22:18:11Z [INFO] [setup/start] setup starting routine=watchdog et_date=2026-06-02
+2026-06-02T22:18:11Z [INFO] [setup/env] env validated alpaca_base=https://paper-api.alpaca.markets sendgrid_present=true
+2026-06-02T22:18:11Z [INFO] [setup/ready] setup complete runlog=/home/runner/work/trading-agent/trading-agent/journal/runlog/2026-06-02-watchdog.log marker=journal/.current-routine
+2026-06-02T22:18:11Z [INFO] [watchdog/check] checking journal path=/home/runner/work/trading-agent/trading-agent/journal/2026-06-02.md
+2026-06-02T22:18:11Z [INFO] [watchdog/check] journal ok path=/home/runner/work/trading-agent/trading-agent/journal/2026-06-02.md reflection_chars=525
+2026-06-02T22:18:11Z [INFO] [finalize/start] finalizing routine=watchdog et_date=2026-06-02
