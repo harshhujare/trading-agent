@@ -8,7 +8,7 @@
     {
       "symbol": "AAOI",
       "description": "Applied Optoelectronics — vertically integrated 800G/1.6T transceivers",
-      "max_allocation_pct": 3
+      "max_allocation_pct": 5
     },
     {
       "symbol": "LWLG",
@@ -33,7 +33,7 @@
     {
       "symbol": "CIEN",
       "description": "Ciena — coherent optical / DCI systems leader",
-      "max_allocation_pct": 4
+      "max_allocation_pct": 5
     },
     {
       "symbol": "AVGO",
@@ -63,12 +63,12 @@
     {
       "symbol": "MTSI",
       "description": "MACOM Technology — laser drivers / TIAs; LPO mid-market play",
-      "max_allocation_pct": 3
+      "max_allocation_pct": 4
     },
     {
       "symbol": "ALAB",
       "description": "Astera Labs — CXL/PCIe/optical connectivity; building photonics division",
-      "max_allocation_pct": 3
+      "max_allocation_pct": 5
     },
     {
       "symbol": "TSEM",
@@ -83,7 +83,7 @@
     {
       "symbol": "GFS",
       "description": "GlobalFoundries — GF Fotonix SiPh platform; China-free supply chain",
-      "max_allocation_pct": 4
+      "max_allocation_pct": 5
     },
     {
       "symbol": "ANET",
@@ -108,7 +108,7 @@
     {
       "symbol": "VECO",
       "description": "Veeco Instruments — MOCVD reactor duopolist; InP capacity buildout beneficiary",
-      "max_allocation_pct": 4
+      "max_allocation_pct": 5
     },
     {
       "symbol": "GLW",
@@ -136,5 +136,5 @@
       "max_allocation_pct": 5
     }
   ],
-  "cash_reserve_pct": 20
+  "cash_reserve_pct": 15
 }
