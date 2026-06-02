@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-06-02",
+  "picks": [
+    {
+      "symbol": "CRDO",
+      "thesis": "TD Cowen Overweight upgrade PT $260 (+19% upside), bullish MA (185.2 > 149.85), fresh institutional catalyst",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "TD Cowen upgrade (2026-06-02 14:51)"
+    },
+    {
+      "symbol": "MRVL",
+      "thesis": "NVIDIA CEO Jensen Huang seal-of-approval: 'next trillion-dollar company'; bullish MA (171.22 > 137.49), validates T100 thesis",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "NVIDIA Computex CEO endorsement (2026-06-02 13:09)"
+    },
+    {
+      "symbol": "TSM",
+      "thesis": "Advanced 3nm chips 15% price hike; bullish MA (402.57 > 373.11); validates manufacturing boom + pricing power thesis",
+      "conviction": "medium_high",
+      "thesis_type": "supply_chain_catalyst",
+      "signal_source": "3nm chip pricing news (2026-06-02 12:31)"
+    },
+    {
+      "symbol": "LITE",
+      "thesis": "Key trading signal flashed at $866.97 → +7% intraday; bullish MA (933.82 > 846.81); photonics exposure validates AI capex thesis",
+      "conviction": "medium_high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Trading signal catalyst (2026-06-01 18:48)"
+    },
+    {
+      "symbol": "GFS",
+      "thesis": "GlobalFoundries + Sivers partnership for AI data-center optical interconnect; bullish MA (70.54 > 57.05); validates foundry/optical thesis",
+      "conviction": "medium",
+      "thesis_type": "partnership_catalyst",
+      "signal_source": "Sivers-GFS AI optical partnership (2026-06-02 08:34)"
+    }
+  ]
+}
