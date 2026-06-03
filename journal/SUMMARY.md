@@ -1,12 +1,12 @@
 # Journal Summary
 
-_Generated 2026-06-02 21:22 from 7 of 23 entries (2026-05-25 → 2026-06-02)_
+_Generated 2026-06-03 21:24 from 7 of 24 entries (2026-05-26 → 2026-06-03)_
 
-## Latest Portfolio Status _(from 2026-06-02)_
+## Latest Portfolio Status _(from 2026-06-03)_
 
-- Cash: $42,278.06
-- Positions (14 open): AAOI (15 @ $162.17, +20.9%), ALAB (9 @ $200.00, +71.5%), ANET (35 @ $141.56, +24.5%), AVGO (11 @ $420.67, +13.2%), CIEN (7 @ $528.73, +15.3%), COHR (13 @ $334.23, +26.9%), CSCO (43 @ $119.30, +6.7%), GFS (52 @ $67.53, +25.6%), GLW (27 @ $189.20, +6.1%), KEYS (14 @ $352.15, -1.4%), MRVL (24 @ $168.58, +64.4%), NVDA (24 @ $216.53, +4.6%), TSM (12 @ $403.55, +10.1%), VECO (73 @ $49.75, +19.4%)
-- Total Value: $111,415.86
+- Cash: $40,117.88
+- Positions (15 open): AAOI (15 @ $162.17, +17.2%), ALAB (9 @ $200.00, +78.0%), ANET (35 @ $141.56, +24.1%), AVGO (11 @ $420.67, +16.1%), CIEN (7 @ $528.73, +19.0%), COHR (13 @ $334.23, +26.2%), CRDO (15 @ $218.67, -2.0%), CSCO (43 @ $119.30, +7.7%), GFS (52 @ $67.53, +27.9%), GLW (27 @ $189.20, +6.6%), KEYS (14 @ $352.15, -0.1%), MRVL (20 @ $168.58, +82.3%), NVDA (24 @ $216.53, -0.0%), TSM (12 @ $403.55, +9.5%), VECO (73 @ $49.75, +23.8%)
+- Total Value: $112,323.37
 
 ## Recent Trades (last 7 days)
 
@@ -56,24 +56,30 @@ _Generated 2026-06-02 21:22 from 7 of 23 entries (2026-05-25 → 2026-06-02)_
 | 15:26 | CRDO | BUY | 15 | $218.86 | TD Cowen Overweight upgrade (+19% PT $260), bullish MA (185.2 > 149.85), fresh institutional catalyst |
 | 15:26 | LITE | BUY | 5 | $948.55 | Trading signal + bullish MA (933.82 > 846.81), photonics capex thesis validated, room within 5% allocation |
 
+### 2026-06-03
+| Time (ET) | Symbol | Action | Qty | Limit | Order ID | Thesis Type | Signal | Conviction | Rationale |
+|-----------|--------|--------|-----|-------|----------|-------------|--------|------------|-----------|
+| 15:36 | ALAB | BUY | 2 | $357.07 | 4ef1ce91 | news_catalyst | Taiwan_operations_expansion | high | ai_infrastructure_capex_validation |
+
+**Execution Details**: ALAB order placed at 0.2% above current ask ($356.36 → $357.07 limit). Taiwan operations expansion announcement validates geographic positioning for AI infrastructure growth capex. Position rises from 2.86% to 3.49% allocation, maintaining comfort within 5% watchlist cap.
+
+**Skipped Picks**:
+- MRVL: Position already at 5.48% (exceeds 5% allocation cap), thesis intact but cannot add
+- TSM: Position at 4.71% allocation with 0.3% room to cap; thesis intact but skip to avoid overallocation risk
+- CRDO: -2.0% unrealized, -7.2% intraday weakness on recent entry (2026-06-02); hold without panic-selling, thesis intact
+- KEYS: +0.1% unrealized, barely in the money; thesis intact but no urgency signal
+
 ## Recent Reflections (last 3 days)
-
-### 2026-05-29
-**Decision Framework Applied:**
-1. **Cash balance**: $39.6K (31% reserve) ✓
-2. **Open positions**: 14 healthy; no positions at -8% mandatory close threshold
-3. **Top 5 thesis alignment**: All five picks reflect the AI infrastructure capex cycle—analyst momentum (MRVL, AVGO), ecosystem validation (NVDA), infrastructure positioning (CSCO), manufacturing ramp (TSM)
-4. **MA health**: CSCO showing strongest breakout; NVDA, MRVL, AVGO, TSM all bullish 20/50 structure
-5. **Risk**: Compliance trims pare down concentration; NVDA/CSCO buys into institutional validation
-
-**Key observations**: The morning research flagged the Cisco CEO commentary as a multiplier effect—it validates NVDA's centrality AND Cisco's own infrastructure bet. This is a rare moment where the same news catalyst justifies adds in two complementary positions. MRVL and AVGO theses are already captured in price (analyst tailwinds reflected); trimming to max allocation frees capital for the fresh catalyst plays.
-
-**Watchpoints**: KEYS (-6.15%) and GLW (-6.97%) approaching the -8% mandatory close threshold; monitor over next 2 trading days. ALAB remains the highest conviction winner (+70% unrealized on $200 entry); thesis remains intact but position cap prevents further scaling. Thesis integrity remains strong across the portfolio.
-
-**Execution Update**: All six orders filled successfully (4 sells trimming overweight positions, 2 buys adding to fresh catalyst plays). Market moved favorably after our fills, with AVGO +4.5%, CSCO +1.8%, ANET +2.7% intraday; sell trims avoided being caught in upside regret. Portfolio now at $105.2K (+1.2% session-to-close), cash rebuilt to $40.8K. Ready for tomorrow's session.
 
 ### 2026-06-01
 All three trim orders filled by close: MRVL 1 @ avg $217.5 (+3.08), CSCO 1 @ avg $121.68 (+1.24), CIEN 2 @ avg $568.5 (total ~$1,137). Portfolio closed at $106,688.01 with cash at $42,278.07, positioning stable across 14 holdings with strong upside momentum (AAOI +17%, ANET +7.3%, MRVL +7.3%, NVDA +6.2%). Allocation compliance restored. GLW at -6.3%, KEYS at -6.3% — both monitoring for 8% threshold. All catalyst narratives intact (MRVL T100, NVDA Computex, CSCO infra, CIEN BofA). Ready for next session with cash buffer at 39.6% of portfolio.
 
 ### 2026-06-02
 MRVL's +44% intraday surge on NVIDIA CEO validation confirms AI infrastructure thesis; trim to 5% cap preserved compliance and freed dry powder. CRDO filled (+4.3% EOD) on analyst catalyst, validating thesis; LITE failed to fill at $948.55 despite bullish structure — thesis intact, gaps in momentum markets tested limit execution. Portfolio +$1.6k net despite cash deployment; no loss thresholds breached. Ready for next session: 15 positions solid, thesis structure validated, dry powder positioned for next catalyst entry.
+
+### 2026-06-03
+Disciplined position management: All five morning picks reflect the AI infrastructure capex thesis, but allocation constraints dictated selective entry. ALAB represented the highest-conviction fresh catalyst (Taiwan expansion) with room to scale, making it the only actionable BUY today.
+
+MRVL's +82% gain has lifted position to 5.48% (past the 5% watchlist max), requiring monitoring for potential trim at next market move. TSM and CRDO theses remain intact—TSM held due to tight allocation, CRDO held due to day-1 entry weakness (no thesis break). KEYS held as an existing position with solid thesis but lower conviction.
+
+Risk management in focus: maintained 35.8% cash reserve ($40.1K), no positions below -8% threshold, only new allocation that stays within cap constraints. Ready for next session.
