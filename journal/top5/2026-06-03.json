@@ -1,0 +1,40 @@
+{
+  "trading_day": "2026-06-03",
+  "picks": [
+    {
+      "symbol": "MRVL",
+      "thesis": "Custom AI chip shift validates infrastructure consolidation around Marvell's design leadership",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Gary Black on custom AI chips shift post-NVIDIA CEO endorsement"
+    },
+    {
+      "symbol": "ALAB",
+      "thesis": "Taiwan operations expansion directly positions Astera for AI infrastructure growth capex",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Taiwan operations expansion announcement for AI infrastructure support"
+    },
+    {
+      "symbol": "TSM",
+      "thesis": "Intel CEO explicitly validates TSM as trusted AI infrastructure partner, agentic AI demand surge",
+      "conviction": "high",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Intel CEO validates TSM partnership on agentic AI CPU demand"
+    },
+    {
+      "symbol": "CRDO",
+      "thesis": "Analyst upgrade to $300 PT reflects AI chip design validation, institutional catalyst",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Roth Capital analyst upgrade PT $300"
+    },
+    {
+      "symbol": "KEYS",
+      "thesis": "Photonics design suite expansion enables next-gen optical link simulation for AI infrastructure",
+      "conviction": "medium",
+      "thesis_type": "news_catalyst",
+      "signal_source": "Keysight photonic design suite GlobalFoundries silicon photonics integration"
+    }
+  ]
+}
