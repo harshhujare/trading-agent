@@ -1,0 +1,3 @@
+2026-06-05T16:27:31Z [INFO] [setup/start] setup starting routine=trading et_date=2026-06-05
+2026-06-05T16:27:31Z [ERROR] [setup/env] missing required env vars missing=APCA_API_KEY_ID APCA_API_SECRET_KEY APCA_BASE_URL
+2026-06-05T16:27:31Z [INFO] [finalize/start] finalizing routine=trading et_date=2026-06-05
