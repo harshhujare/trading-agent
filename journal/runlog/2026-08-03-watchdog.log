@@ -1,0 +1,3 @@
+2026-08-03T22:31:22Z [INFO] [setup/start] setup starting routine=watchdog et_date=2026-08-03
+2026-08-03T22:31:22Z [ERROR] [setup/env] missing required env vars missing=APCA_API_KEY_ID APCA_API_SECRET_KEY APCA_BASE_URL SENDGRID_API_KEY NOTIFY_FROM NOTIFY_EMAIL
+2026-08-03T22:31:22Z [INFO] [finalize/start] finalizing routine=watchdog et_date=2026-08-03
