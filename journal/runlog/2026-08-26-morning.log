@@ -1,0 +1,3 @@
+2026-08-26T14:25:21Z [INFO] [setup/start] setup starting routine=morning et_date=2026-08-26
+2026-08-26T14:25:21Z [ERROR] [setup/env] missing required env vars missing=APCA_API_KEY_ID APCA_API_SECRET_KEY APCA_BASE_URL
+2026-08-26T14:25:21Z [INFO] [finalize/start] finalizing routine=morning et_date=2026-08-26
